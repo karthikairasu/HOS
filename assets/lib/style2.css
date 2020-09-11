@@ -51,6 +51,8 @@
 .topsecnav .navbar-nav .nav-link {
   padding :1px 25px!important; 
   color: black!important;
+  font-size: 13px;
+  font-weight: 600;
 }
 .topsecnav .navbar-nav .nav-item .nav-link:hover{
   background: #EBF2F9!important;

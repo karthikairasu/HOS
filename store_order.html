@@ -48,7 +48,7 @@
        </a>
    </div>
     <div class="col-6 text-center px-0">
-      <h6 class="text-danger ff_mon"><b>NUPCO HOSPITAL ORDERING PORTAL</b> <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 30px"></h6>
+      <h4 class="text-danger ff_mon"><b>NUPCO HOSPITAL ORDERING PORTAL</b> <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 30px"></h4>
     </div>
     <div class="col-3 text-right px-0" style="font-size: 11px;font-weight: 600;"> 
       <div class="row">
@@ -76,16 +76,16 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item my-1 active">
-          <a class="nav-link" href="store_order.html">Store Order</a>
+          <a class="nav-link" href="store_order.html"><i class="fas fa-store fs_18"></i>  Store Order</a>
         </li>
         <li class="nav-item mb-1">
-          <a class="nav-link" href=#>Medical List</a>
+          <a class="nav-link" href=#><i class="fas fa-pills fs_18"></i> Medical List</a>
         </li>
         <li class="nav-item mb-1">
-          <a class="nav-link" href="#">Inventory</a>
+          <a class="nav-link" href="#"><i class="fas fa-dolly-flatbed fs_18"></i> Inventory</a>
         </li>
         <li class="nav-item mb-1">
-          <a class="nav-link" href="#">Sales</a>
+          <a class="nav-link" href="#"><i class="fas fa-balance-scale fs_18"></i> Sales</a>
         </li>
       </ul>
     </div>
@@ -101,27 +101,42 @@
             <li class="nav-item">
               <a class="nav-link" href="admin_profile.html">
               <img src="assets/images/admin.png" style="height:30px;width:auto;"><br> 
-              Admin</a>
+              Copy</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
               <img src="assets/images/mail.png" style="height:30px;width:auto;"><br> 
-              Mails</a>
+              Delete</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
               <img src="assets/images/security.png" style="height:30px;width:auto;"><br> 
-              Security</a>
+              Search</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
               <img src="assets/images/analytics.png" style="height:30px;width:auto;"><br> 
-              Analytics</a>
+              Filter</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html">
               <img src="assets/images/logout.png" style="height:30px;width:auto;"><br> 
-              Logout</a>
+              Print</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+              <img src="assets/images/logout.png" style="height:30px;width:auto;"><br> 
+              Export</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+              <img src="assets/images/logout.png" style="height:30px;width:auto;"><br> 
+              Attach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+              <img src="assets/images/logout.png" style="height:30px;width:auto;"><br> 
+              Catelogue</a>
             </li>
            <!--  <li class="nav-item">
               <a class="nav-link" href="#">
@@ -138,6 +153,14 @@
                 <option value="arabic">Arabic</option>
               </select>
             </form>
+            </a>
+          </li>
+          <li class="nav-item px-2 py-1">
+            <a><span class="badge badge-dark p-2" title="logout"><i class="fas fa-power-off"></i></span>
+            </a>
+          </li>
+          <li class="nav-item px-2 py-1">
+            <a>
             </a>
           </li>
         </ul>
@@ -383,6 +406,7 @@
             "scrollY":        "55vh",
             "scrollCollapse": true,
             "paging":         false,
+            "searching": false,
             "lengthMenu": [ [15, 30, 50, 100, 250, 500, 1000, 1500], [15, 20, 50, 100, 250, 500, 1000, 1500] ],
             "iDisplayLength": 1000,
         } );
