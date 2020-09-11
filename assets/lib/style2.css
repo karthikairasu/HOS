@@ -23,7 +23,7 @@
 .sidenav .navbar-nav .nav-link {
   padding: 13px 20px!important;
   color: #0e5099!important;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
 }
 .sidenav .navbar-nav .nav-item .nav-link:hover{
@@ -49,10 +49,14 @@
   margin-right: 40px;
 }
 .topsecnav .navbar-nav .nav-link {
-  padding :1px 25px!important; 
+  padding :6px 25px!important; 
   color: black!important;
   font-size: 13px;
   font-weight: 600;
+  box-shadow: inset 0px -2px 3px 0 rgb(186 208 217), 0 0px 3px 0 rgb(186 208 217);
+}
+.fs_18{
+  font-size: 18px;
 }
 .topsecnav .navbar-nav .nav-item .nav-link:hover{
   background: #EBF2F9!important;
