@@ -1,6 +1,3 @@
-body{
-  font-family: 'Montserrat', sans-serif!important;
-}
 .main{
   height: 100%;
   position: fixed!important;
@@ -13,16 +10,11 @@ body{
   box-shadow: inset 0px -6px 11px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
   border-bottom: 1px solid #b2b2b2;
 }
-.topsecnav{
-  background: #ffffff;
-  box-shadow: inset 0px -1px 5px 0 rgba(0, 0, 0, 0.2), 0px 5px 5px 0 rgba(0, 0, 0, 0.19);
-}
 .sidenav{
   height: 100%;
   position: fixed!important;
   width:13%;
   z-index: 99!important;
-  box-shadow: inset 0px -6px 11px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
 }
 .main .navbar{
   position: fixed!important;
@@ -30,7 +22,7 @@ body{
 }
 .sidenav .navbar-nav .nav-link {
   padding: 13px 20px!important;
-  color: #ffffff!important;
+  color: #0e5099!important;
   font-size: 13px;
   font-weight: 600;
 }
@@ -90,38 +82,10 @@ body{
   border-radius: 10px;
   overflow-y: auto;
   overflow-x: auto;
-  box-shadow: 0 0 4px 0px #909090, 0 0 2px 2px #f1f1f1;
 }
 #example_length{
   text-align: left;
 }
 #example_info{
   text-align: left;
-}
-/*===============nav=================*/
-.nav_left{
-
-}
-.nav_center{
-
-}
-.nav_right{
-
-}
-.text_shadow{
-  text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
-  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
-}
-.topnav{
-  border: none;
-  background: #93b6de!important;
-}
-.topsecnav{
-  background: #ffffff;
-}
-.sidenav{
-  background: #65A3EA!important;
-}
-.main{
-  background: #ECF4FC!important;
 }
