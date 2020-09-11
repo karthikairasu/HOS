@@ -4,7 +4,7 @@
   <title>HOS</title>
   <meta name="theme-color" content="#557eb0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
-  <link rel="icon" type="image/png" href="assets/images/HOS-logo.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="194x194">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
@@ -42,28 +42,31 @@
 </head>
 <body class="bg-light">
   <nav class="navbar fixed-top navbar-light bg-white topnav px-2 py-0" style="height: 108px;">
-   <div class="col-3">
+   <div class="col-3 nav_left">
        <a class="navbar-brand py-3" href="store_order.html">
          <img src="assets/images/king.jpg" height="70px" width="auto">
        </a>
    </div>
-    <div class="col-6 text-center px-0">
-      <h6 class="text-danger ff_mon"><b>NUPCO HOSPITAL ORDERING PORTAL</b> <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 30px"></h6>
+    <div class="col-6 nav_center text-center px-0">
+      <h4 class="text-danger ff_mon">
+        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 30px"><br>
+        <b class="text_shadow">NUPCO HOSPITAL ORDERING SYSTEM</b>
+      </h4>
     </div>
-    <div class="col-3 text-right px-0" style="font-size: 11px;font-weight: 600;"> 
+    <div class="col-3 nav_right text-right px-0" style="font-size: 11px;font-weight: 600;"> 
       <div class="row">
          <div class="col-12 text-center">
            <img class="" src="assets/images/logo2.png" height="50px" width="auto" style="margin:16px 10px">
          </div>
       </div>
-        <span class="dropdown">
+        <!-- <span class="dropdown">
           <span class="dropdown-toggle" data-toggle="dropdown" style="color:#197c89">White Pharmacy</span> |
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Logout</a>
           </div>
-        </span>
-        <span style="color:#197c89;">White Pharmacy</span> |
-        <span style="color:#8a8c8d;">Cycle end Dec 31</span> |
+        </span> -->
+        <span style="color:#197c89;">09/11/2020</span> |
+        <span style="color:#8a8c8d;">01:14 PM</span> |
         <span style="color:#8a8c8d;">Help</span>
     </div>
   </nav><br><br><br><br>
@@ -380,9 +383,10 @@
   <script type="text/javascript">
     $(document).ready(function() {
         $('#example').DataTable( {
-            "scrollY":        "50vh",
+            "scrollY":        "55vh",
             "scrollCollapse": true,
-            "paging":         true,
+            "searching": false,
+            "paging":         false,
             "lengthMenu": [ [15, 30, 50, 100, 250, 500, 1000, 1500], [15, 20, 50, 100, 250, 500, 1000, 1500] ],
             "iDisplayLength": 1000,
         } );
