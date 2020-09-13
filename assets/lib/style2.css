@@ -95,3 +95,6 @@
 #example_info{
   text-align: left;
 }
+.table tbody tr:hover{
+  background-color: #63b6ff!important;
+}
