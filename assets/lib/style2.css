@@ -98,3 +98,7 @@
 .table tbody tr:hover{
   background-color: #63b6ff!important;
 }
+.text_shadow{
+  text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
+  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+}
