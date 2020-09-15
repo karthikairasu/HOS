@@ -58,6 +58,9 @@
 .fs_18{
   font-size: 18px;
 }
+.fs_10{
+  font-size: 10px!important;
+}
 .topsecnav .navbar-nav .nav-item .nav-link:hover{
   background: #EBF2F9!important;
   color: #0e5099!important;
