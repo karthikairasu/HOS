@@ -79,7 +79,7 @@
 }
 #example_wrapper .table th, .table td {
   padding: 4px 2px!important;
-  vertical-align: top;
+  vertical-align: middle!important;
   border-top: 1px solid #dee2e6!important;
 }
 #example_wrapper table th {
@@ -178,4 +178,7 @@
 }
 .option_checkbox.radio::after {
   border-radius: 50%;
+}
+.h_sm{
+  height: calc(1.8125rem + 2px);
 }
