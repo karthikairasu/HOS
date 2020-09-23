@@ -18,7 +18,7 @@
 
   <!-- Favicons -->
   <meta name="theme-color" content="#1C2346">
-  <link rel="icon" type="image/png" href="assets/images/kk.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="194x194">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
@@ -48,6 +48,25 @@
   background-image: linear-gradient(90deg,#BAD0D9 10%,#92a5ac 100%);
   background-size: cover;
 } 
+.bg_img {
+    background: linear-gradient(rgba(140,140,140,.45), rgba(140,140,140,.45)),url(assets/images/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 767.98px){
+.bg_img {
+  height: 100%;
+}
+}
+.bg_line {
+    background-color: #ffffff;
+    background-image: url(assets/images/line.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+} 
 .form-control {
   display: block;
   width: 100%;
@@ -76,64 +95,150 @@ form.user .btn-user {
 .sd_none{
   box-shadow: none;
 }
-
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #DD6626;
+    background-color: #1d2445;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
   </style>
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg_img">
 
   <div class="container sd_none">
 
     <!-- Outer Row -->
-    <div class="row justify-content-center my-5">
+    <div class="row justify-content-center my-sm-3">
 
-      <div class="col-xl-5 col-lg-5 col-md-6">
+      <div class="col-xl-2 col-lg-2 col-md-4 pr-md-0 px-sm-2">
+        <div class="card o-hidden border-0 shadow-lg my-md-5 mb-sm-0">
+          <ul class="nav flex-column nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home"><b>Custodian</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1"><b>3PL</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2"><b>HOS</b></a>
+              </li>
+            </ul> 
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-5 col-md-6 pl-md-0 px-sm-2">
 
-        <div class="card o-hidden border-0 shadow-lg my-5">
-          <div class="card-body p-0">
-            <!-- Nested Row within Card Body -->
-            <div class="row">
-              <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
-              <div class="col-lg-12 ff_mon">
-                <div class="p-5">
-                  <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
-                  </div>
-                  <form class="user" action="" method="post">
-                    <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Enter username..." required/>
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
-                    </div>
-                    <div class="form-group">
-                      <div class="custom-control custom-checkbox small">
-                        <input type="checkbox" class="custom-control-input" id="customCheck"/>
-                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+        <div class="card o-hidden border-0 shadow-lg my-md-5 mt-sm-0">
+         <div class="tab-content bg_line">
+            <div id="home" class="container tab-pane active"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Custodian Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Enter username..." required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                        <hr>
+                      </form>
+                      <div class="text-center">
+                        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">
                       </div>
                     </div>
-                    <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='store_order.html'">
-                      Login
-                    </button>
-                    <hr><!-- 
-                    <a href="index.html" class="btn btn-google btn-user btn-block">
-                      <i class="fab fa-google fa-fw"></i> Login with Google
-                    </a>
-                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                      <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                    </a> -->
-                  </form>
-                  <div class="text-center">
-                    <!-- <a class="small" href="forgot-password.html">Forgot Password?</a>
-                  </div>
-                  <div class="text-center">
-                    <a class="small" href="register.html">Create an Account!</a> -->
-                    <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">
                   </div>
                 </div>
               </div>
             </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS 3PL Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Enter username..." required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                        <hr>
+                      </form>
+                      <div class="text-center">
+                        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Enter username..." required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                        <hr>
+                      </form>
+                      <div class="text-center">
+                        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
