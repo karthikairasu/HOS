@@ -182,3 +182,32 @@
 .h_sm{
   height: calc(1.8125rem + 2px);
 }
+/*=========login style==========*/
+.text_sd{
+  background-color: #989898;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+.login_card{
+  background: linear-gradient(rgba(140,140,140,.0), rgba(140,140,140,.0)),url(../images/HOS-logo.png);
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sd{
+  box-shadow: 0px 0px 1px 1px gray, 0px 0px 1px 1px gray;
+}
+.hover:hover{
+  box-shadow: 0px 0px 3px 1px gray, 0px 0px 3px 1px gray;
+  transform: scale(1.01);
+  transition-delay: 50ms;
+}
+@media (max-width: 350px){
+ .btn_ad, .btn_cus, .btn_3pl, .btn_inv{
+   font-size: 12px!important;
+ }
+}

@@ -47,93 +47,64 @@ form.user .btn-user {
 .sd_none{
   box-shadow: none;
 }
-
-  </style>
+</style>
 
 </head>
 <header>
   <nav class="navbar navbar-expand-sm justify-content-center py-0 shadow fixed-top bg_darkblue" style="border-bottom: 1px solid #1b1f48;min-height: 60px;font-family: 'Montserrat',sans-serif; background-color: #1b1f48;">
-      <div class="col-12 text-right">
-        <a href="" class="btn btndefault text-white mx-4" style="background-color: #d8221a;"><b>Admin</b></a>
-        <a href="" class="btn btndefault text-white mx-4" style="background-color: #d8221a;">Custodian</a>
-        <a href="" class="btn btndefault text-white mx-4" style="background-color: #d8221a;">3PL</a>
-        <a href="" class="btn btndefault text-white mx-4" style="background-color: #d8221a;">Inventory</a>
+      <div class="col-12 p-0 text-center text-md-right">
+        <a class="btn btn-default btn-sm text-white my-2 btn_ad" style="background-color: #d8221a;">Admin</a>
+        <a class="btn btn-default btn-sm text-white my-2 btn_cus" style="background-color: #d8221a;">Custodian</a>
+        <a class="btn btn-default btn-sm text-white my-2 btn_3pl" style="background-color: #d8221a;">3PL</a>
+        <a class="btn btn-default btn-sm text-white my-2 btn_inv" style="background-color: #d8221a;">Inventory</a>
       </div>
     </nav>
-    <nav class="navbar navbar-expand py-0 shadow fixed-top bg-light" style="top:60px;height: 50px">
-      <div class="col-4 text-left">
-        <img src="assets/images/Capture.jpg">
+    <nav class="navbar navbar-expand py-0 shadow fixed-top bg-light" style="top:60px;height: 60px">
+      <div class="col-4 text-center">
+        <img src="assets/images/Capture.jpg" height="40" width="auto">
+      </div>
+      <div class="col-4 px-0 text-center">
+        <h2 class="text_sd"><b>HOS</b></h2>
       </div>
       <div class="col-4 text-center">
-        <h3>HOS</h3>
-      </div>
-      <div class="col-4 text-right">
-        <img src="assets/images/logo2.png" height="50" width="auto">
+        <img src="assets/images/logo2.png" height="40" width="auto">
       </div>
     </nav>
 </header>
 <body class="">
 
-  <div class="container sd_none">
-
-    <!-- Outer Row -->
-    <div class="row justify-content-center my-5">
-
-      <div class="col-xl-5 col-lg-5 col-md-6">
-
-        <div class="card o-hidden border-0 shadow-lg my-5">
-          <div class="card-body p-0">
-            <!-- Nested Row within Card Body -->
-            <div class="row">
-              <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
-              <div class="col-lg-12 ff_mon">
-                <div class="p-5">
-                  <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
-                  </div>
-                  <form class="user" action="" method="post">
-                    <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Enter username..." required/>
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
-                    </div>
-                    <div class="form-group">
-                      <div class="custom-control custom-checkbox small">
-                        <input type="checkbox" class="custom-control-input" id="customCheck"/>
-                        <label class="custom-control-label" for="customCheck">Remember Me</label>
-                      </div>
-                    </div>
-                    <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='store_order.html'">
-                      Login
-                    </button>
-                    <hr><!-- 
-                    <a href="index.html" class="btn btn-google btn-user btn-block">
-                      <i class="fab fa-google fa-fw"></i> Login with Google
-                    </a>
-                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                      <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                    </a> -->
-                  </form>
-                  <div class="text-center">
-                    <!-- <a class="small" href="forgot-password.html">Forgot Password?</a>
-                  </div>
-                  <div class="text-center">
-                    <a class="small" href="register.html">Create an Account!</a> -->
-                    <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">
-                  </div>
-                </div>
-              </div>
+  <section class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="container-fluid mt-5">
+       <div class="row">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
+            <div class="card login_card border-0 d-flex justify-content-center align-items-center">
+                <div class="row mx-0 sd hover">
+                <div class="col-md-12 bg-white">
+                <h4 class="text-center w-100 my-2" style="font-variant: small-caps;"><b>Hos Login</b></h4>
+                 <form class="">
+                   <div class="form-group my-3">
+                     <input type="email" class="form-control form-control-sm" name="" placeholder="Email">
+                   </div>
+                   <div class="form-group my-3">
+                     <input type="password" class="form-control form-control-sm" name="" placeholder="Password">
+                   </div>
+                   <div class="form-group mb-0 my-4 text-center">
+                     <button class="btn btn-primary ">Login</button>
+                   </div>
+                 </form>
+               </div> 
+               </div>
             </div>
           </div>
-        </div>
-
-      </div>
-
+       </div>
     </div>
+  </section>
 
-  </div>
-
+  <footer>
+    <nav class="navbar fixed-bottom p-0" style="border:none;background-color: #1b1f48;">
+      <h6 class="mb-0 my-1 mx-auto" style="font-size: 12px;color: #fff;font-weight: bold;">Nupco</h6>
+    </nav>
+  </footer>
   <!-- script files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
