@@ -206,7 +206,7 @@
   transform: scale(1.01);
   transition-delay: 50ms;
 }
-@media (max-width: 350px){
+@media (max-width: 349.98px){
  .btn_ad, .btn_cus, .btn_3pl, .btn_inv{
    font-size: 12px!important;
  }
