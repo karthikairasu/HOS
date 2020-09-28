@@ -85,12 +85,12 @@
 form.user .form-control-user {
   font-size: .8rem;
   border-radius: 10rem;
-  padding: 1.5rem 1rem;
+  padding: 1.2rem 1rem;
 }
 form.user .btn-user {
   font-size: .8rem;
   border-radius: 10rem;
-  padding: .75rem 1rem;
+  padding: .65rem 1rem;
 }
 .sd_none{
   box-shadow: none;
@@ -107,7 +107,7 @@ form.user .btn-user {
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    background: radial-gradient(circle, rgba(49,207,59,0.5), #50e3c2);
+    background: radial-gradient(circle, rgb(28 35 70 / 83%), #1C2346);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transition: all 250ms ease-out;
@@ -121,7 +121,7 @@ form.user .btn-user {
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    background: radial-gradient(circle, rgba(31,38,103,0.9), #5f18af);
+    background: radial-gradient(circle, rgb(226 82 23 / 80%), #E32E1B);
         -webkit-transition: all 250ms ease-out;
     transition: all 250ms ease-out;
     -webkit-transition-delay: 50ms;
@@ -143,12 +143,33 @@ form.user .btn-user {
     -webkit-transform: rotate(-40deg) scale(1.05);
     transform: rotate(-40deg) scale(1.05);
 }
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgb(27 31 72 / 82%), #1b1f48f2);
+  z-index: 0;
+}
+
   </style>
 
 </head>
 
-<body class="bg_img">
-
+<body class="">
+  <video src="assets/images/videoplayback.mp4" autoplay loop playsinline muted></video>
+  <div class="overlay">
+    
+  </div>
   <div class="container sd_none">
 
     <!-- Outer Row -->
@@ -157,26 +178,29 @@ form.user .btn-user {
       <div class="col-xl-2 col-lg-2 col-md-4 pr-md-0 px-sm-2">
         <div class="card o-hidden border-0 shadow-lg my-md-5 mb-sm-0">
           <ul class="nav flex-column nav-tabs" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#home"><b>Custodian</b></a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#admin"><b><i class="fas fa-users-cog"></i>&ensp;Admin</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu1"><b>3PL</b></a>
+                <a class="nav-link active" data-toggle="tab" href="#home"><b><i class="fas fa-user-shield"></i>&ensp;Custodian</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu2"><b>HOS</b></a>
+                <a class="nav-link" data-toggle="tab" href="#menu1"><b><i class="fas fa-boxes"></i>&ensp;3PL</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2"><b><i class="fas fa-h-square"></i>&ensp;HOS</b></a>
               </li>
             </ul> 
         </div>
       </div>
-      <div class="col-xl-5 col-lg-5 col-md-6 pl-md-0 px-sm-2">
+      <div class="col-xl-4 col-lg-4 col-md-5 pl-md-0 px-sm-2">
 
         <div class="card o-hidden border-0 shadow-lg my-md-5 mt-sm-0">
          <div class="tab-content bg_line position-relative overflow-hidden">
 
           <div class="blog-card__square"></div>
           <div class="blog-card__circle"></div>
-            <div id="home" class="container tab-pane active"><br>
+          <div id="admin" class="container tab-pane fade"><br>
               <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="row">
@@ -184,7 +208,7 @@ form.user .btn-user {
                   <div class="col-lg-12 ff_mon">
                     <div class="p-5">
                       <div class="text-center">
-                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Custodian Login</b></h1>
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Admin Login</b></h1>
                       </div>
                       <form class="user" action="" method="post">
                         <div class="form-group">
@@ -202,11 +226,39 @@ form.user .btn-user {
                         <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
                           Login
                         </button>
-                        <hr>
                       </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="home" class="container tab-pane active"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
                       <div class="text-center">
-                        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Custodian Login</b></h1>
                       </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="username..." required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -238,11 +290,7 @@ form.user .btn-user {
                         <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
                           Login
                         </button>
-                        <hr>
                       </form>
-                      <div class="text-center">
-                        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -274,11 +322,7 @@ form.user .btn-user {
                         <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
                           Login
                         </button>
-                        <hr>
                       </form>
-                      <div class="text-center">
-                        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">
-                      </div>
                     </div>
                   </div>
                 </div>
