@@ -91,6 +91,9 @@ form.user .btn-user {
   font-size: .8rem;
   border-radius: 10rem;
   padding: .65rem 1rem;
+  background-color: #1b1f48;
+  border-color: #e65e36;
+  color: #fff;
 }
 .sd_none{
   box-shadow: none;
@@ -167,6 +170,26 @@ video {
 </head>
 
 <body class="">
+  <header>
+    <nav class="navbar navbar-expand fixed-top">
+      <a href="" class="navbar-brand"><img src="assets/images/logo_trans.png" height="60px"></a>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto nav" role="tablist">
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#admin">Admin</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#home">HOS</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#menu1">Custodian</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#menu2">3PL</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <video src="assets/images/videoplayback.mp4" autoplay loop playsinline muted></video>
   <div class="overlay">
     
@@ -174,9 +197,9 @@ video {
   <div class="container sd_none">
 
     <!-- Outer Row -->
-    <div class="row justify-content-center my-sm-3">
+    <div class="row justify-content-center my-5">
 
-      <div class="col-xl-2 col-lg-2 col-md-4 pr-md-0 px-sm-2">
+      <!-- <div class="col-xl-2 col-lg-2 col-md-4 pr-md-0 px-sm-2">
         <div class="card o-hidden border-0 shadow-lg my-md-5 mb-sm-0">
           <ul class="nav flex-column nav-tabs" role="tablist">
             <li class="nav-item">
@@ -193,10 +216,10 @@ video {
               </li>
             </ul> 
         </div>
-      </div>
+      </div> -->
       <div class="col-xl-4 col-lg-4 col-md-5 pl-md-0 px-sm-2">
 
-        <div class="card o-hidden border-0 my-md-5 mt-sm-0">
+        <div class="card o-hidden border-0 my-5">
          <div class="tab-content bg_line position-relative overflow-hidden">
 
           <div class="blog-card__square"></div>
@@ -241,7 +264,7 @@ video {
                   <div class="col-lg-12 ff_mon">
                     <div class="p-5">
                       <div class="text-center">
-                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Custodian Login</b></h1>
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Login</b></h1>
                       </div>
                       <form class="user" action="" method="post">
                         <div class="form-group">
@@ -256,7 +279,7 @@ video {
                             <label class="custom-control-label" for="customCheck">Remember Me</label>
                           </div>
                         </div>
-                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                        <button class="btn btn-default btn-user btn-block" type="button" onclick="window.location.href='home.html'">
                           Login
                         </button>
                       </form>
@@ -273,7 +296,7 @@ video {
                   <div class="col-lg-12 ff_mon">
                     <div class="p-5">
                       <div class="text-center">
-                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS 3PL Login</b></h1>
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Custodian Login</b></h1>
                       </div>
                       <form class="user" action="" method="post">
                         <div class="form-group">
@@ -305,7 +328,7 @@ video {
                   <div class="col-lg-12 ff_mon">
                     <div class="p-5">
                       <div class="text-center">
-                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Login</b></h1>
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS 3PL Login</b></h1>
                       </div>
                       <form class="user" action="" method="post">
                         <div class="form-group">
@@ -357,6 +380,25 @@ video {
   <!--------table style lib------------------------>
   <script src="assets/datatables/jquery.dataTables.min.js"></script>
   <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript">
+    var animateButton = function(e) {
+
+      e.preventDefault;
+      //reset animation
+      e.target.classList.remove('animate');
+      
+      e.target.classList.add('animate');
+      setTimeout(function(){
+        e.target.classList.remove('animate');
+      },700);
+    };
+
+    var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+    for (var i = 0; i < bubblyButtons.length; i++) {
+      bubblyButtons[i].addEventListener('click', animateButton, false);
+    }
+  </script>
 
 </body>
 
