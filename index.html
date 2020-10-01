@@ -164,8 +164,30 @@ video {
   background: linear-gradient(rgb(27 31 72 / 82%), #1b1f48f2);
   z-index: 0;
 }
-
-  </style>
+@media (max-width: 524px){
+  .navbar{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .navbar-brand{
+    display: block;
+    width: 100%;
+    text-align: center;
+  } 
+  .group_main{
+    text-align: center;
+    margin:auto;
+  }
+  .group_main .btn_logins{
+    font-size: 13px;
+    margin:0px;
+  }
+}
+</style>
 
 </head>
 
@@ -174,7 +196,7 @@ video {
     <nav class="navbar navbar-expand fixed-top">
       <a href="" class="navbar-brand"><img src="assets/images/logo_trans.png" height="60px"></a>
       <!-- Links -->
-      <ul class="navbar-nav ml-auto nav" role="tablist">
+      <ul class="navbar-nav ml-auto nav group_main" role="tablist">
         <li class="nav-item mr-3">
           <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#admin">Admin</a>
         </li>
@@ -236,7 +258,7 @@ video {
                       </div>
                       <form class="user" action="" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Enter username..." required/>
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
                         </div>
                         <div class="form-group">
                           <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
@@ -268,7 +290,7 @@ video {
                       </div>
                       <form class="user" action="" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="username..." required/>
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
                         </div>
                         <div class="form-group">
                           <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
@@ -300,7 +322,7 @@ video {
                       </div>
                       <form class="user" action="" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Enter username..." required/>
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
                         </div>
                         <div class="form-group">
                           <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
@@ -332,7 +354,7 @@ video {
                       </div>
                       <form class="user" action="" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Enter username..." required/>
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
                         </div>
                         <div class="form-group">
                           <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>

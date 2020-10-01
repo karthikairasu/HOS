@@ -20,6 +20,30 @@
       align-items: center;
       justify-content: center;
     }
+    .bg_animation{
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 101%;
+      transform: rotate(0deg);
+      -webkit-transition: all 250ms ease-out;
+      transition: all 250ms ease-out;
+      background: linear-gradient(rgba(140,140,140,.0), rgba(140,140,140,.0)),url(assets/images/bg_trans.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: initial;
+      transition: all 250ms ease-out;
+      -webkit-transition-delay: 50ms;
+      transition-delay: 50ms;
+    }
+    .bg_animation:hover{
+       -webkit-transform: rotate(0deg) scale(1.1);
+      transform: rotate(0deg) scale(0.9);
+      transition: all 250ms ease-out;
+     -webkit-transition-delay: 50ms;
+     transition-delay: 50ms;
+    }
   </style>
 
 </head>
@@ -45,14 +69,15 @@
     </nav>
 </header>
 <body class="">
-
   <section class="d-flex align-items-center justify-content-center" style="height: 100vh;">
     <div class="container-fluid mt-5">
        <div class="row">
-          <div class="col-12 col-sm-12 col-md-9 col-lg-7 mx-auto">
+          <div class="col-12 col-sm-12 col-md-9 col-lg-7 mx-auto px-0">
+          
             <div class="card login_card border-0 d-flex justify-content-center align-items-center">
-                <div class="row mx-0 bg-white" style="height: 36vh;width: 28vw;border-radius: 20px">
-                <div class="col-md-12 flex_center">
+              <div class="bg_animation"></div>
+                <div class="row mx-0" style="height: 36vh;width: 28vw;border-radius: 20px">
+                <div class="col-md-12 flex_center bg-white">
                 <span class="empty_group">
                 <h4 class="text-center w-100 py-3 mb-0 text_sd2" style="font-variant: small-caps;"><b>Hos Login</b></h4>
                  <form class="">
