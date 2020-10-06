@@ -73,6 +73,28 @@
         -webkit-transform: translateY(3%) translateX(0%) rotate(0deg);
         transform: translateY(0%) translateX(0%) rotate(0deg);
     }
+/** * Card #9 */
+ .card--9 {
+   --mouseX9: 0;
+   --mouseY9: 0;
+   --padding: 1em;
+   background: #fff;
+   position: relative;
+}
+ .card--9::before {
+   display: block;
+   position: absolute;
+   top: calc(var(--padding) * 0);
+   bottom: calc(var(--padding) * 0);
+   left: calc(var(--padding) * 3);
+   right: calc(var(--padding) * 0);
+   content: ' ';
+   z-index: -1;
+   background: linear-gradient(rgba(140,140,140,.0), rgba(140,140,140,.0)),url(assets/images/bg_trans2.png);
+   background-repeat: no-repeat;
+   opacity: 0.9;
+   transform: perspective(700px) rotateX(calc(var(--mouseY9) * -1deg)) rotateY(calc(var(--mouseX9) * 1deg));
+}
   </style>
 
 </head>
@@ -103,11 +125,11 @@
        <div class="row">
           <div class="col-12 col-sm-12 col-md-9 col-lg-7 mx-auto px-0">
           
-            <div class="card login_card border-0 d-flex justify-content-center align-items-center">
-              <div class="bg_animation"></div>
-              <div class=""></div>
-                <div class="row mx-0" style="height: 36vh;width: 28vw;border-radius: 20px">
-                <div class="col-md-12 flex_center bg-white">
+            <div class="card login_card card--9 border-0 d-flex justify-content-center align-items-center">
+             <!--  <div class="bg_animation"></div> -->
+              <div class="mt-4"></div>
+                <div class="row mx-0">
+                <div class="col-md-12 flex_center bg-white" style="border-radius: 20px">
                 <span class="empty_group">
                 <h4 class="text-center w-100 py-3 mb-0 text_sd2" style="font-variant: small-caps;"><b>Hos Login</b></h4>
                  <form class="">
@@ -129,7 +151,12 @@
        </div>
     </div>
   </section>
-
+<div class="card card--9">
+  <h2 class="card__title">Having fun with cards</h2>
+  <img class="card__img" src="https://images2.imgbox.com/88/73/i2Aj6TLa_o.jpg" alt="">
+  <p class="card__text">I think a different color and a little opacity make it more sexy</p>
+  <a class="card__btn" href="" class="">buy me</a>
+</div>
   <footer>
     <nav class="navbar fixed-bottom p-0" style="border:none;background-color: #1b1f48;">
       <h6 class="mb-0 my-1 mx-auto" style="font-size: 12px;color: #fff;font-weight: bold;">Nupco</h6>
@@ -154,6 +181,25 @@
       $(window).on("load", function () {
         aos_init();
       });
+
+      var card9 = document.querySelector(".card--9");
+
+card9.addEventListener('mousemove', function (e) {
+
+  var wh = window.innerHeight / 2,
+  ww = window.innerWidth / 2;
+  card9.style.setProperty('--mouseX9', (e.clientX - ww) / 25);
+  card9.style.setProperty('--mouseY9', (e.clientY - wh) / 25);
+
+});
+
+card9.addEventListener('mouseleave', function (e) {
+
+  card9.style.setProperty('--mouseX9', 0);
+  card9.style.setProperty('--mouseY9', 0);
+
+});
+
   </script>
 </body>
 
