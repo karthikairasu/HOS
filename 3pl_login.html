@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="assets/aos/aos.css" rel="stylesheet">
+  <link href="assets/animate.css/animate.min.css" rel="stylesheet">
+
   <link rel="manifest" href="assets/lib/manifest.json">
   <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
   <link rel="stylesheet" type="text/css" href="assets/lib/style2.css">
@@ -20,6 +24,77 @@
       align-items: center;
       justify-content: center;
     }
+    .bg_animation{
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 101%;
+      transform: rotate(0deg);
+      -webkit-transition: all 250ms ease-out;
+      transition: all 250ms ease-out;
+      background: linear-gradient(rgba(140,140,140,.0), rgba(140,140,140,.0)),url(assets/images/bg_trans2.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: initial;
+      transition: all 250ms ease-out;
+      -webkit-transition-delay: 50ms;
+      transition-delay: 50ms;
+    }
+    .bg_animation2{
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 101%;
+      transform: rotate(0deg);
+      -webkit-transition: all 250ms ease-out;
+      transition: all 250ms ease-out;
+      background: linear-gradient(rgba(140,140,140,.0), rgba(140,140,140,.0)),url(assets/images/br_trans.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: initial;
+      transition: all 250ms ease-out;
+      -webkit-transition-delay: 50ms;
+      transition-delay: 50ms;
+    }
+    .login_card:hover{
+       -webkit-transform: rotate(0deg) scale(1.1);
+      transform: rotate(0deg) scale(0.99);
+      transition: all 250ms ease-out;
+     -webkit-transition-delay: 250ms;
+     transition-delay: 250ms;
+    }
+    .login_card:hover .bg_animation {
+        -webkit-transform: translateY(0%) translateX(0%) rotate(0deg);
+        transform: translateY(0%) translateX(0%) rotate(0deg);
+    }
+    .login_card:hover .bg_animation2 {
+        -webkit-transform: translateY(3%) translateX(0%) rotate(0deg);
+        transform: translateY(0%) translateX(0%) rotate(0deg);
+    }
+/** * Card #9 */
+ .card--9 {
+   --mouseX9: 0;
+   --mouseY9: 0;
+   --padding: 1em;
+   background: #fff;
+   position: relative;
+}
+ .card--9::before {
+   display: block;
+   position: absolute;
+   top: calc(var(--padding) * 0);
+   bottom: calc(var(--padding) * 0);
+   left: calc(var(--padding) * 3);
+   right: calc(var(--padding) * 0);
+   content: ' ';
+   z-index: -1;
+   background: linear-gradient(rgba(140,140,140,.0), rgba(140,140,140,.0)),url(assets/images/bg_trans2.png);
+   background-repeat: no-repeat;
+   opacity: 0.9;
+   transform: perspective(700px) rotateX(calc(var(--mouseY9) * -1deg)) rotateY(calc(var(--mouseX9) * 1deg));
+}
   </style>
 
 </head>
@@ -37,22 +112,24 @@
         <img src="assets/images/Capture.jpg" height="40" width="auto">
       </div>
       <div class="col-4 px-0 text-center">
-        <h2 class="text_sd"><b>HOS</b></h2>
+        <h2 class="text_sd" data-aos="fade-up"><b>HOS</b></h2>
       </div>
       <div class="col-4 text-center">
         <img src="assets/images/logo2.png" height="40" width="auto">
       </div>
     </nav>
 </header>
-<body class="">
-
+<body class="" style="background: #e1f9f9;">
   <section class="d-flex align-items-center justify-content-center" style="height: 100vh;">
     <div class="container-fluid mt-5">
        <div class="row">
-          <div class="col-12 col-sm-12 col-md-9 col-lg-7 mx-auto">
-            <div class="card login_card border-0 d-flex justify-content-center align-items-center">
-                <div class="row mx-0 bg-white" style="height: 36vh;width: 28vw;border-radius: 20px">
-                <div class="col-md-12 flex_center">
+          <div class="col-12 col-sm-12 col-md-9 col-lg-7 mx-auto px-0">
+          
+            <div class="card login_card card--9 border-0 d-flex justify-content-center align-items-center">
+             <!--  <div class="bg_animation"></div> -->
+              <div class="mt-4"></div>
+                <div class="row mx-0">
+                <div class="col-md-12 flex_center bg-white" style="border-radius: 20px">
                 <span class="empty_group">
                 <h4 class="text-center w-100 py-3 mb-0 text_sd2" style="font-variant: small-caps;"><b>3pl Login</b></h4>
                  <form class="">
@@ -74,7 +151,6 @@
        </div>
     </div>
   </section>
-
   <footer>
     <nav class="navbar fixed-bottom p-0" style="border:none;background-color: #1b1f48;">
       <h6 class="mb-0 my-1 mx-auto" style="font-size: 12px;color: #fff;font-weight: bold;">Nupco</h6>
@@ -86,7 +162,39 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="assets/lib/crs.min.js"></script>
   <script src="assets/lib/script.js"></script>
+  <!-- aos script files -->
+  <script src="assets/aos/aos.js"></script>
+  <script type="text/javascript">
+    //Init AOS
+      function aos_init() {
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+      }
+      $(window).on("load", function () {
+        aos_init();
+      });
 
+      var card9 = document.querySelector(".card--9");
+
+      card9.addEventListener('mousemove', function (e) {
+
+        var wh = window.innerHeight / 2,
+        ww = window.innerWidth / 2;
+        card9.style.setProperty('--mouseX9', (e.clientX - ww) / 25);
+        card9.style.setProperty('--mouseY9', (e.clientY - wh) / 25);
+
+      });
+
+      card9.addEventListener('mouseleave', function (e) {
+
+        card9.style.setProperty('--mouseX9', 0);
+        card9.style.setProperty('--mouseY9', 0);
+
+      });
+
+  </script>
 </body>
 
 </html>
