@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HOS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- clear Cookies -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#1C2346">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png" sizes="194x194">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="../assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Style files -->
+  <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- owl carousel Style files -->
+  <link href="../assets/owl.carousel/../assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="../assets/aos/aos.css" rel="stylesheet">
+  <link href="../assets/animate.css/animate.min.css" rel="stylesheet">
+  <!-- venobox Style files -->
+  <link href="../assets/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="manifest" href="../assets/lib/manifest.json">
+  <link rel="stylesheet" type="text/css" href="../assets/lib/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/lib/style2.css">
+  <!--------table style lib------------------------>
+  <link rel="stylesheet" type="text/css" href="../assets/datatables/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="../assets/datatables/dataTables.bootstrap4.min.css">
+  <style type="text/css">
+.bg-gradient-primary {
+  background-image: linear-gradient(90deg,#BAD0D9 10%,#92a5ac 100%);
+  background-size: cover;
+} 
+.bg_img {
+    background: linear-gradient(rgba(140,140,140,.45), rgba(140,140,140,.45)),url(../assets/images/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 767.98px){
+.bg_img {
+  height: 100%;
+}
+}
+.bg_line {
+    background-color: #ffffff;
+    background-image: url(../assets/images/line.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+} 
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6e707e;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d1d3e2;
+  border-radius: .35rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+form.user .form-control-user {
+  font-size: .8rem;
+  border-radius: 10rem;
+  padding: 1.2rem 1rem;
+}
+form.user .btn-user {
+  font-size: .8rem;
+  border-radius: 10rem;
+  padding: .65rem 1rem;
+  background-color: #1b1f48;
+  border-color: #e65e36;
+  color: #fff;
+}
+.sd_none{
+  box-shadow: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #DD6626;
+    background-color: #1d2445;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.blog-card__square {
+  position: absolute;
+    top: -121px;
+    left: -81px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: radial-gradient(circle, rgb(28 35 70 / 83%), #1C2346);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+.blog-card__circle {
+ 
+    position: absolute;
+    top: -135px;
+    right: -81px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: radial-gradient(circle, rgb(226 82 23 / 80%), #E32E1B);
+        -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+    -webkit-transition-delay: 50ms;
+    transition-delay: 50ms;
+
+}.card{
+    transition: all 250ms ease-out;
+  }
+.card:hover {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 3px 3px rgb(218 218 218 / 38%);
+}
+.tab-content:hover .blog-card__circle {
+    -webkit-transform: rotate(-40deg) scale(1.1);
+    transform: rotate(-40deg) scale(1.1);
+}
+.tab-content:hover .blog-card__square {
+    -webkit-transform: rotate(-40deg) scale(1.05);
+    transform: rotate(-40deg) scale(1.05);
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgb(27 31 72 / 82%), #1b1f48f2);
+  z-index: 0;
+}
+@media (max-width: 524px){
+  .navbar{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .navbar-brand{
+    display: block;
+    width: 100%;
+    text-align: center;
+  } 
+  .group_main{
+    text-align: center;
+    margin:auto;
+  }
+  .group_main .btn_logins{
+    font-size: 13px;
+    margin:0px;
+  }
+}
+/*=========login style==========*/
+.text_sd{
+  background-color: #989898;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+.text_sd2{
+  text-shadow: 0 1px 0 #d8221a, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+.login_card{
+  /*background: linear-gradient(rgba(140,140,140,.0), rgba(140,140,140,.0)),url(../images/HOS-logo.png);*/
+  height: 68vh;
+  background: none!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sd4{
+  box-shadow: 0px 0px 1px 1px gray, 0px 0px 1px 1px gray;
+}
+.sd5{
+  box-shadow: 0 0 2px 1px white, 0 0 4px 0px white;
+}
+.hover:hover{
+  box-shadow: 0px 0px 3px 1px gray, 0px 0px 3px 1px gray;
+  transform: scale(1.01);
+  transition-delay: 50ms;
+}
+@media (max-width: 349.98px){
+ .btn_ad, .btn_cus, .btn_3pl, .btn_inv{
+   font-size: 12px!important;
+ }
+}
+.btn_logins{
+
+}
+.group_main{
+  
+}
+.bubbly-button {
+   font-family: "Montserrat", sans-serif;
+   display: inline-block;
+   font-size: 1em;
+   padding: 7px 15px!important;
+   -webkit-appearance: none;
+   appearance: none;
+   color: #fff;
+   border-radius: 10px;
+   border: none;
+   font-weight: bold;
+   cursor: pointer;
+   position: relative;
+   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
+ .bubbly-button:focus {
+   outline: 0;
+   box-shadow: 0 0 2px 1px white, 0 0 4px 0px white;
+}
+ .bubbly-button:before, .bubbly-button:after {
+   position: absolute;
+   content: "";
+   display: block;
+   width: 140%;
+   height: 100%;
+   left: -20%;
+   z-index: -1000;
+   transition: all ease-in-out 0.5s;
+   background-repeat: no-repeat;
+}
+ .bubbly-button:before {
+   display: none;
+   top: -75%;
+   background-image: radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, transparent 20%, #E4542F 20%, transparent 30%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, transparent 10%, #E4542F 15%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%);
+   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+ .bubbly-button:after {
+   display: none;
+   bottom: -75%;
+   background-image: radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, transparent 10%, #E4542F 15%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%), radial-gradient(circle, #E4542F 20%, transparent 20%);
+   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:hover {
+  box-shadow: 0 0 2px 1px white, 0 0 4px 0px white;
+  background-color: #E4542F;
+}
+ .bubbly-button:active {
+   transform: scale(0.98);
+   background-color: #E4542F;
+   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+ .bubbly-button.animate:before {
+   display: block;
+   animation: topBubbles ease-in-out 0.75s forwards;
+}
+ .bubbly-button.animate:after {
+   display: block;
+   animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+ @keyframes topBubbles {
+   0% {
+     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+   50% {
+     background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+   100% {
+     background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+ @keyframes bottomBubbles {
+   0% {
+     background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+   50% {
+     background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+   100% {
+     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+</style>
+
+</head>
+
+<body class="">
+  <header>
+    <nav class="navbar navbar-expand fixed-top">
+      <a href="" class="navbar-brand"><img src="../assets/images/logo_trans.png" height="60px"></a>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto group_main">
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins" href="admin_login.html">Admin</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins" href="index.html">HOS</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins" href="custodian_login.html">Custodian</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins" href="3pl_login.html">3PL</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins" href="inventory_login.html">Inventory</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <video src="../assets/images/videoplayback.mp4" autoplay loop playsinline muted></video>
+  <div class="overlay">
+    
+  </div>
+  <div class="container sd_none">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center my-5">
+
+      <!-- <div class="col-xl-2 col-lg-2 col-md-4 pr-md-0 px-sm-2">
+        <div class="card o-hidden border-0 shadow-lg my-md-5 mb-sm-0">
+          <ul class="nav flex-column nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#admin"><b><i class="fas fa-users-cog"></i>&ensp;Admin</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home"><b><i class="fas fa-user-shield"></i>&ensp;Custodian</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1"><b><i class="fas fa-boxes"></i>&ensp;3PL</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2"><b><i class="fas fa-h-square"></i>&ensp;HOS</b></a>
+              </li>
+            </ul> 
+        </div>
+      </div> -->
+      <div class="col-xl-4 col-lg-4 col-md-5 pl-md-0 px-sm-2">
+
+        <div class="card o-hidden border-0 my-5">
+         <div class="tab-content bg_line position-relative overflow-hidden">
+
+          <div class="blog-card__square"></div>
+          <div class="blog-card__circle"></div>
+          <div class="container"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>Inventory Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="../assets/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../assets/MDB-free/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../assets/owl.carousel/owl.carousel.min.js"></script>
+  <!-- aos script files -->
+  <script src="../assets/aos/aos.js"></script>
+  <!-- venobox script files -->
+  <script src="../assets/venobox/venobox.min.js"></script>
+  <!-- script files -->
+  <script src="../assets/lib/crs.min.js"></script>
+  <script src="../assets/lib/script.js"></script>
+  <!--------table style lib------------------------>
+  <script src="../assets/datatables/jquery.dataTables.min.js"></script>
+  <script src="../assets/datatables/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript">
+    var animateButton = function(e) {
+
+      e.preventDefault;
+      //reset animation
+      e.target.classList.remove('animate');
+      
+      e.target.classList.add('animate');
+      setTimeout(function(){
+        e.target.classList.remove('animate');
+      },700);
+    };
+
+    var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+    for (var i = 0; i < bubblyButtons.length; i++) {
+      bubblyButtons[i].addEventListener('click', animateButton, false);
+    }
+  </script>
+
+</body>
+
+</html>
