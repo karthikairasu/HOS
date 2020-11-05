@@ -67,21 +67,7 @@
     #example_wrapper .table tr:nth-child(1) th {
     background-color: #3276b1!important;
 }
-.dataTables_scrollBody{
-  position: relative;
-    overflow: hidden!important;
-    width: 101%!important;
-    max-height: 41vh;
-}
-.dataTables_scrollHead{
-  overflow: hidden;
-    position: relative;
-    border: 0px;
-    width: 101%!important;
-}
-.dataTables_scroll{
-  overflow-x:auto;
-}
+
   </style>
 </head>
 <body class="bg-light">
@@ -260,23 +246,19 @@
                      <label class="col-md-4 col-sm-4 col-4"><b>Material Description</b></label>
                     <label class="col-md-1 col-sm-1 col-1 px-0">:</label>
                     <input
-                      type="date"
+                      type="text"
                       class="form-control-sm form-control br_cr col-md-3 col-sm-3 col-3"
-                      id="po_no" placeholder="from"
+                      id="po_no" placeholder=""
                     />
                     <label class="col-md-1 col-sm-1 col-1 px-0"></label>
-                    <input
-                      type="date"
-                      class="form-control-sm form-control br_cr col-md-3 col-sm-3 col-3"
-                      id="po_no" placeholder="to" 
-                    />
+                    
                   </div>
                 </div>
               </div>
             </form> 
           </div> <!--========= border close ========-->
           <div class="col-12 table_fixed_height text-center">
-            <table id="example" class="table table-bordered mx-auto mb-0">
+            <table id="example" class="table table-bordered mx-auto mb-0 example">
               <thead class="bg-info text-white">
                 <tr>
                   <th>All</th>
@@ -292,7 +274,6 @@
 
                 <tbody style="cursor: pointer;">
                   <tr >
-                    <!-- onclick="window.location.href='https://ansara.in/asn2c/web/create_new_gr/4500015950'" -->
                     <td><input type="checkbox" name="po_no[]" value="4500015950"></td>
                     <td >4500015950 </td>
                     <td>233,480.73</td>
@@ -305,7 +286,6 @@
                    <td class="text-right">117,327.00</td>
                   </tr>
                   <tr >
-                    <!-- onclick="window.location.href='https://ansara.in/asn2c/web/create_new_gr/4500015967'" -->
                     <td><input type="checkbox" name="po_no[]" value="4500015967"></td>
                     <td >4500015967 </td>
                     <td>6,603,879.73</td>
@@ -318,7 +298,6 @@
                    <td class="text-right">1,435,211.00</td>
                   </tr>
                   <tr >
-                    <!-- onclick="window.location.href='https://ansara.in/asn2c/web/create_new_gr/4500015984'" -->
                     <td><input type="checkbox" name="po_no[]" value="4500015984"></td>
                     <td >4500015984 </td>
                     <td>22,750,942.90</td>
@@ -331,7 +310,66 @@
                    <td class="text-right">3,547,066.00</td>
                   </tr>
                   <tr >
-                    <!-- onclick="window.location.href='https://ansara.in/asn2c/web/create_new_gr/4500016822'" -->
+                    <td><input type="checkbox" name="po_no[]" value="4500016822"></td>
+                    <td >4500016822 </td>
+                    <td>142,670.00</td>
+                    
+                    <td>2020-07-13</td>
+                    <!-- <td>2020-07-13</td> -->
+                    <td>ESC4</td>
+                    <td class="text-right">3,400.00</td>
+                    <td class="text-right">0.00</td>
+                   <td class="text-right">3,400.00</td>
+                  </tr>
+                  <tr >
+                    <td><input type="checkbox" name="po_no[]" value="4500016822"></td>
+                    <td >4500016822 </td>
+                    <td>142,670.00</td>
+                    
+                    <td>2020-07-13</td>
+                    <!-- <td>2020-07-13</td> -->
+                    <td>ESC4</td>
+                    <td class="text-right">3,400.00</td>
+                    <td class="text-right">0.00</td>
+                   <td class="text-right">3,400.00</td>
+                  </tr>
+                  <tr >
+                    <td><input type="checkbox" name="po_no[]" value="4500016822"></td>
+                    <td >4500016822 </td>
+                    <td>142,670.00</td>
+                    
+                    <td>2020-07-13</td>
+                    <!-- <td>2020-07-13</td> -->
+                    <td>ESC4</td>
+                    <td class="text-right">3,400.00</td>
+                    <td class="text-right">0.00</td>
+                   <td class="text-right">3,400.00</td>
+                  </tr>
+                  <tr >
+                    <td><input type="checkbox" name="po_no[]" value="4500016822"></td>
+                    <td >4500016822 </td>
+                    <td>142,670.00</td>
+                    
+                    <td>2020-07-13</td>
+                    <!-- <td>2020-07-13</td> -->
+                    <td>ESC4</td>
+                    <td class="text-right">3,400.00</td>
+                    <td class="text-right">0.00</td>
+                   <td class="text-right">3,400.00</td>
+                  </tr>
+                  <tr >
+                    <td><input type="checkbox" name="po_no[]" value="4500016822"></td>
+                    <td >4500016822 </td>
+                    <td>142,670.00</td>
+                    
+                    <td>2020-07-13</td>
+                    <!-- <td>2020-07-13</td> -->
+                    <td>ESC4</td>
+                    <td class="text-right">3,400.00</td>
+                    <td class="text-right">0.00</td>
+                   <td class="text-right">3,400.00</td>
+                  </tr>
+                  <tr >
                     <td><input type="checkbox" name="po_no[]" value="4500016822"></td>
                     <td >4500016822 </td>
                     <td>142,670.00</td>
@@ -346,8 +384,8 @@
                 </tbody>
             </table>
           </div>
-          <div class="col-12 text-center my-3">
-            <a class="btn btn-primary" href="asn_create_new_gr.html" type="submit" value="submit"> Create ASN </a>
+          <div class="col-12 text-center my-0">
+            <a class="btn btn-primary" href="asn_select_item.html" type="submit" value="submit"> Create ASN </a>
           </div>
         </div>
       </div><br>
@@ -376,8 +414,8 @@
   <script src="../assets/datatables/dataTables.bootstrap4.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-        $('#example').DataTable( {
-            "scrollY":        "55vh",
+        $('.example').DataTable( {
+            "scrollY":        "28vh",
             "scrollCollapse": true,
             "paging":         false,
             "searching": false,

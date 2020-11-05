@@ -269,4 +269,5 @@ body{
 #example_wrapper .table tr:nth-child(1) th {
     background-color: steelblue!important;
     color: #fff!important;
+    white-space: nowrap;
 }
