@@ -1,0 +1,304 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en-us">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ASN</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <!-- clear Cookies -->
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <!-- Favicons -->
+    <meta name="theme-color" content="#1C2346">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" sizes="194x194">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="../assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Style files -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <!-- owl carousel Style files -->
+    <link href="../assets/owl.carousel/../assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Aos Style files -->
+    <link href="../assets/aos/aos.css" rel="stylesheet">
+    <link href="../assets/animate.css/animate.min.css" rel="stylesheet">
+    <!-- venobox Style files -->
+    <link href="../assets/venobox/venobox.css" rel="stylesheet">
+
+    <link rel="manifest" href="../assets/lib/manifest.json">
+    <link rel="stylesheet" type="text/css" href="../assets/lib/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/lib/style2.css">
+    <link rel="stylesheet" type="text/css" href="../assets/lib/asn_style.css">
+    <!--------table style lib------------------------>
+    <link rel="stylesheet" type="text/css" href="../assets/datatables/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../assets/datatables/dataTables.bootstrap4.min.css">
+    <style type="text/css">
+       .fs_14{
+      font-size: 14px;
+    }
+    @media (min-width: 992px) and (max-width: 1259.98px){
+       .fs_14{
+      font-size: 12px;
+    }
+    }
+    @media (min-width: 1260px) and (max-width: 1367.98px){
+       .fs_14{
+      font-size: 14px;
+    }
+    }
+    @media (min-width: 1368px) and (max-width: 1920.98px){
+      .fs_14{
+      font-size: 16px;
+    }
+    }
+    </style>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar fixed-top navbar-light bg-white topnav px-2 py-0" style="height: 73px;">
+     <div class="col-3 align-items-center d-flex" style="height:40px;font-size: 20px">
+        <a href="asn_po_list.html"><i class="fas fa-arrow-left">&ensp;Back</i></a>
+     </div>
+    <div class="col-6 text-center px-0">
+      <h3 class="text-danger ff_mon">
+        <!-- <img class="" src="../assets/images/HOS-logo.png" style="width:auto;height: 60px">-->
+        <b class="text_shadow4 gradient_text2">Nupco</b></h3>
+    </div>
+    <div class="col-3 text-right px-0" style="font-size: 11px;font-weight: 600;"> 
+      <div class="row">
+        <div class="col-3"></div>
+         <div class="col-7 text-right">
+           <img class="" src="../assets/images/logo2.png" height="50px" width="auto" style="margin:0px 10px">
+         </div>
+         <div class="col-2 text-left mt-3">
+           <a href="index.html"><span class="badge badge-dark p-2" title="logout"><i class="fas fa-power-off"></i></span>
+            </a>
+         </div>
+      </div>
+        <!-- <span class="dropdown">
+          <span class="dropdown-toggle" data-toggle="dropdown" style="color:#197c89">White Pharmacy</span> |
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </span> -->
+        <span style="color:#197c89;">09/11/2020</span> |
+        <span style="color:#8a8c8d;">08:09 PM</span> |
+        <span style="color:#8a8c8d;">Help</span>
+    </div>
+  </nav><br><br></br>
+  <div class="container-fluid px-0">
+    <div class="row mx-0">
+      
+      <div class="main2 px-3 py-2">
+      
+        <div class="container-fluid main_content bg-white">
+          <div class="text-center">
+            <h5 class="text-center"><b>Request PO</b></h5>
+          </div>
+          <div class="row fs_14">
+            <div class="col-md-6">
+             <form class="" action="https://ansara.in/asn3/web/request_po1" method="post" enctype="multipart/form-data">
+                <div class="mb-4" style="border: 2px solid #dee2e6;">
+                   <div class="row p-2 mx-0">
+                      <p>
+                         <span id="nupco">
+                         </span>
+                      </p>
+                      <p style="text-align: right;" class="mb-1"><b>عزيزي المورد   <br>
+                         في حال وجود تعميد من نوبكو ولم يظهر في الموقع، الرجاء كتابة رقم أمر الشراء في الخانه بالاسفل.
+                         <br></b>
+                      </p>
+                      <p class="mb-1 "><b>
+                         Dear customer,</b><br>
+                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;If you have a NUPCO PO and it does not shown in the page, kindly fill up the PO number and date below:<br>
+                      </p>
+                      <!--<div class="col-md-4 col-sm-6 col-12">
+                         <div class="form-group">
+                                     <label class=""><b> PO Type :</b></label>
+                           <select name="po_type" required class="form-control" onchange="text_display(this.value)">
+                             <option value="">Select PO Type</option>
+                             <option value="nupco">Nupco</option>
+                             <option value="10005">MINISTRY OF HEALTH</option>
+                           </select>
+                         </div>
+                         </div>-->
+                      <div class="col-md-6 col-sm-6 col-12">
+                         <div class="form-group mb-1">
+                            <label class=""><b> PO Number :</b></label>
+                            <input type="text" class="form-control form-control-sm br_cr" id="nuppo_no" placeholder="" name="nupco_po_no" required="">
+                         </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-12">
+                         <div class="form-group mb-1">
+                            <label class=""><b>Date :</b></label>
+                            <input type="date" class="form-control form-control-sm br_cr" id="date" placeholder="" name="nupco_date" required="">
+                         </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-12">
+                         <div class="form-group mb-1">
+                            <label class=""><b> Supplier Contact Name  :</b></label>
+                            <input type="text" class="form-control form-control-sm br_cr" id="nuppo_no" placeholder="" name="name" required="">
+                         </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-12">
+                         <div class="form-group mb-1">
+                            <label class=""><b>Supplier Contact Email :</b></label>
+                            <input type="email" class="form-control form-control-sm br_cr" placeholder="" name="email" required="">
+                         </div>
+                      </div>
+                      <!-- <h5 class="w-100"><b>Dear NUPCO TEAM,</b></h5> -->
+                      <div class=" col-12 px-0">
+                         <p class="my-1"><b>Dear NUPCO Team ,</b></p>
+                         <p class="">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;This is to request you that we are not finding our PO List.<br>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Could you please kindly check and provide the PO for the above reference.
+                         </p>
+                         <p><b>Thanks</b></p>
+                         <p><b>Regards</b></p>
+                         <p><b>Vendor Name : 400008 - JAMJOOM MEDICAL INDUSTRIES CO. LTD.</b></p>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-12 px-0">
+                         <p class="mb-0"><b>Additional Comments</b></p>
+                         <textarea type="text" class="form-control form-control-sm" name="comment" required=""></textarea>
+                      </div>
+                      <div class="col-md-2 col-sm-6 col-12 px-0"></div>
+                      <div class="col-md-4 col-sm-6 col-12 px-0">
+                         <button class="btn btn-primary" type="submit" value="submit" name="submit" style="margin-top:35px;">
+                         Send Request
+                         </button>
+                      </div>
+                   </div>
+                </div>
+                <!--========= border close ========-->
+             </form>
+          </div>
+            <div class="col-md-6">
+             <form class="" action="" method="post" enctype="multipart/form-data">
+                <div class="mb-4" style="border: 2px solid #dee2e6;">
+                   <div class="row p-2 mx-0">
+                      <p><span id="other"><b>
+                         </b></span>
+                      </p>
+                      <p class="mb-1" style="text-align: right;padding-left: 115px;"><b>عزيزي المورد
+                         <br>في حال وجود تعميد من العميل ولم يظهر بالموقع، الرجاء تعبئة المرفق ورفعه.
+                         </b>
+                      </p>
+                      <b>
+                      </b>
+                      <p class="mb-1"><b>Dear customer,
+                         </b><br>
+                         <span class="">
+                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;If you have a customer PO and it does not shown in the page, kindly find the attachment and fill it.
+                         </span>
+                      </p>
+                      <p></p>
+                      <div class="col-md-6">
+                         <div class="form-group mb-1">
+                            <label class=""><b>Attachment</b></label>
+                            <input type="file" class="form-control form-control-sm" name="form" required="">
+                         </div>
+                      </div>
+                      <div class="col-md-6 text-center">
+                         <div class="form-group mb-1">         
+                            <a class="btn btn-primary btn-sm mt-4" href="https://ansara.in/asn3/assets/RequestPOTemplate.xlsx" download="">Download Template</a>
+                         </div>
+                      </div>
+                      <br>
+                      <div class="col-md-6 col-sm-6 col-12">
+                         <div class="form-group mb-1">
+                            <label class=""><b> Supplier Contact Name  :</b></label>
+                            <input type="text" class="form-control form-control-sm br_cr" id="nuppo_no" placeholder="" name="name" required="">
+                         </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-12">
+                         <div class="form-group mb-1">
+                            <label class=""><b>Supplier Contact Email :</b></label>
+                            <input type="email" class="form-control form-control-sm br_cr" placeholder="" name="email" required="">
+                         </div>
+                      </div>
+                      <div class="col-12 px-0" style="">
+                         <p class="my-1"><b>Dear NUPCO Team ,</b></p>
+                         <p class="">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            This is to request you that we are not finding our PO List.
+                            <br>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Could you please kindly check and provide the PO for the above reference.
+                         </p>
+                         <p><b>Thanks</b></p>
+                         <p><b>Regards</b></p>
+                         <p><b>Vendor Name : 400008 - JAMJOOM MEDICAL INDUSTRIES CO. LTD.</b></p>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-12 px-0">
+                         <p class="mb-0"><b>Additional Comments</b></p>
+                         <textarea type="text" class="form-control form-control-sm" name="comment" required=""></textarea>
+                      </div>
+                      <div class="col-md-2 col-sm-6 col-12 px-0"></div>
+                      <div class="col-md-4 col-sm-6 col-12 px-0">
+                         <button class="btn btn-primary" type="submit" value="submit" name="submit" style="margin-top:35px;">
+                         Send Request
+                         </button>
+                      </div>
+                   </div>
+                </div>
+             </form>
+          </div>
+          </div>
+        </div><br>
+      </div>
+    </div>
+    
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="../assets/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../assets/MDB-free/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../assets/owl.carousel/owl.carousel.min.js"></script>
+    <!-- aos script files -->
+    <script src="../assets/aos/aos.js"></script>
+    <!-- venobox script files -->
+    <script src="../assets/venobox/venobox.min.js"></script>
+    <!-- script files -->
+    <script src="../assets/lib/crs.min.js"></script>
+    <script src="../assets/lib/script.js"></script>
+    <!--------table style lib------------------------>
+    <script src="../assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="../assets/datatables/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#example').DataTable( {
+              "scrollY":        "55vh",
+              "scrollCollapse": true,
+              "paging":         false,
+              "searching": false,
+              "lengthMenu": [ [15, 30, 50, 100, 250, 500, 1000, 1500], [15, 20, 50, 100, 250, 500, 1000, 1500] ],
+              "iDisplayLength": 1000,
+          } );
+      } );
+    </script>
+    <script>
+      $( '.topsecnav .navbar-nav .nav-link' ).on( 'click', function () {
+        $( '.topsecnav .navbar-nav' ).find( '.nav-item.active' ).removeClass( 'active' );
+        $( this ).parent( '.nav-item' ).addClass( 'active' );
+      });
+    </script>
+    <script type="text/javascript">
+      $( '.sidenav .navbar-nav .nav-link' ).on( 'click', function () {
+        $( '.sidenav .navbar-nav' ).find( '.nav-item.active' ).removeClass( 'active' );
+        $( this ).parent( '.nav-item' ).addClass( 'active' );
+      });
+    </script>
+  </body>
+  </html>
