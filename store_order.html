@@ -97,13 +97,15 @@
      </div>
    </div>
     <div class="col-6 text-center px-0">
-      <h4 class="text-danger ff_mon">
+      <h6 class="text-danger ff_mon">
         <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px"><br>
-        <b class="text_shadow">NUPCO HOSPITAL ORDERING PORTAL</b></h4>
+        <b class="text_shadow">NUPCO HOSPITAL ORDERING PORTAL</b></h6>
     </div>
     <div class="col-3 text-right px-0" style="font-size: 11px;font-weight: 600;"> 
       <div class="row">
-         <div class="col-12 text-center">
+        <div class="col-5 text-center">
+         </div>
+         <div class="col-7 text-center">
            <img class="" src="assets/images/logo2.png" height="50px" width="auto" style="margin:16px 10px">
          </div>
       </div>
@@ -131,7 +133,7 @@
             <span class="fa fas fa-tachometer-alt fs_18"></span> 
             <span class="menuText">&ensp; Dashboard</span></a>
         </li>
-        <li class="nav-item my-1 active">
+        <li class="nav-item mb-1 active">
           <a class="nav-link" href="store_order.html">
             <span class="fa fas fa-store fs_18"></span> 
             <span class="menuText">&ensp; Store Order</span></a>
@@ -139,18 +141,51 @@
         <li class="nav-item mb-1">
           <a class="nav-link" href=#>
             <span class="fa fas fa-pills fs_18"></span> 
-            <span class="menuText">&ensp; Medical List</span></a>
+            <span class="menuText">&ensp; Material List</span></a>
+        </li>
+        <li class="nav-item mb-1 accordion" id="accordion">
+          <a class="nav-link accord_arrow" data-toggle="collapse" href="#collapseOne">
+             <i class="fas fa-dolly-flatbed fs_18"></i>&ensp; Inventory
+          </a>
+          <div id="collapseOne" class="panel-collapse collapse show" data-parent="#accordion">
+             <ul class="navbar-nav sub_list">
+                <li class="nav-item my-1">
+                  <a class="nav-link" href="">
+                        <i class="fas fa-warehouse"></i> &ensp;Warehouse Inventory</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">
+                        <i class="fab fa-digital-ocean"></i> &ensp;Own Inventory</a>
+                </li>
+              </ul>
+          </div>
         </li>
         <li class="nav-item mb-1">
-          <a class="nav-link" href="stock_report.html">
-            <span class="fa fas fa-dolly-flatbed fs_18"></span> 
-            <span class="menuText">&ensp; Inventory</span></a>
+          <a class="nav-link" href=#>
+            <span class="fa fas fa-building fs_18"></span> 
+            <span class="menuText">&ensp; Department Order</span></a>
         </li>
         <li class="nav-item mb-1">
+          <a class="nav-link" href=#>
+            <span class="fa fas fa-list fs_18"></span> 
+            <span class="menuText">&ensp; Department Order List</span></a>
+        </li>
+        <li class="nav-item mb-1">
+          <a class="nav-link" href=#>
+            <span class="fa fas fa-exchange-alt fs_18"></span> 
+            <span class="menuText">&ensp; Return Order</span></a>
+        </li>
+        <li class="nav-item mb-1">
+          <a class="nav-link" href=#>
+            <span class="fa fas fa-clipboard-list fs_18"></span> 
+            <span class="menuText">&ensp; Return Order List</span></a>
+        </li>
+        <!-- <li class="nav-item mb-1">
           <a class="nav-link" href="#">
             <span class="fa fas fa-balance-scale fs_18"></span> 
             <span class="menuText">&ensp; Sales</span></a>
-        </li>
+        </li> -->
+
       </ul>
     </div>
     <div class="main px-3 py-5">
@@ -242,26 +277,50 @@
       </nav>
       <div class="container-fluid main_content bg-white p-2">
         <div class="row mx-0">
-          <div class="col-10 text-center">
+          <!-- <div class="col-10 text-center">
             <h5 style="color: steelblue"></h5>
           </div>
           <div class="col-2 py-1 text-center">
            
-          </div>
-          <table class="table table-borderless head_table text-center mb-0">
+          </div> -->
+          <table class="table table-borderless head_table text-center mb-0 mb-1" style="font-size: 13px">
               <thead>
                  <tr>
-                  <th width="6%" class="p-0">&ensp;</th>
-                   <th width="10%" class="p-0">
-                    <label for="supplying-plant">Supplying Plant:</label></th>
-                   <th width="20%" class="p-0">
-                    <label> <b>Centeral warehouse dammam</b></label>
-                    <th width="6%" class="p-0">&ensp;</th>
-                   <th width="10%" class="p-0">
-                    <label for="delivery-date">Delivery Date:</label></th>
-                   <th width="20%" class="p-0">
-                    <input type="" class="datepicker form-control form-control-sm" name="delivery_date"></th>
-                     <th width="6%" class="p-0">&ensp;</th>
+                  <th width="1%" class="p-0">&ensp;</th>
+                   <th width="10%" class="p-0 text-left">
+                    <label for="supplying-plant">Supplying Plant:</label><br>
+                    <span class="p-0">
+                    <label class="mb-0" ><input type="" class="form-control form-control-sm" value="Central Warehouse Riyadh" readonly></label>
+                    <input type="hidden" name="supplying_plant_code" value="CRC1">
+                    <input type="hidden" name="supplying_plant" value="Central Warehouse Riyadh">
+                    <input type="hidden" name="sloc_id" value="C000">
+                    <input type="hidden" name="hss_master_no" value="120001">
+                    <input type="hidden" name="hospital_name" value="King Salman Hospital">
+                  </span>
+                  </th>
+                    <th width="1%" class="p-0">&ensp;</th>
+                    <th width="10%" class="p-0 text-left">
+                    <label for="delivery-date">Order Type:</label><br>
+                    <select class="form-control form-control-sm" name="order_type" id="order_type">
+                      <option value="normal">Normal</option>
+                      <option value="emergency">Emergency</option>
+                    </select>
+
+                  </th>
+                  <th width="1%" class="p-0">&ensp;</th>
+                   <th width="10%" class="p-0 text-left">
+                    <label for="delivery-date">Delivery Date:</label><br>
+                    <input type="" class="datepicker form-control form-control-sm h_sm" name="delivery_date" id="delivery_date" required autocomplete="off">
+                  </th>
+                  <th width="1%" class="p-0">&ensp;</th>
+                   <th width="10%" class="p-0 text-left">
+                    <label for="delivery-date">Customer Ref:</label><br>
+                    <input type="" class="form-control h_sm" name="customer_ref" id="customer_ref" required autocomplete="off" maxlength="20">
+                  </th>
+                  <th width="6%" class="p-0 align-middle">
+                    <input type="hidden" class="form-control h_1rem" data-row_id="ht1" data-name="header_text" id="text_ht1" name="header_text">
+                    <i class="fas fa-file-alt text_icon" aria-hidden="true" data-row_id="ht1"></i>
+                  </th>
                  </tr>
               </thead>
             </table>
@@ -284,7 +343,7 @@
             </table>
           </div>
           <div class="col-12 text-center">
-            <button class="btn btn-info">Create Order</button>
+            <button class="btn btn-info btn-sm">Create Order</button>
           </div>
         </div>
       </div><br>
@@ -318,7 +377,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
         $('#example').DataTable( {
-            "scrollY":        "47vh",
+            "scrollY":        "44vh",
             "scrollCollapse": true,
             "paging":         false,
             "searching": false,

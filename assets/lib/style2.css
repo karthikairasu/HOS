@@ -1,8 +1,8 @@
 .main{
   height: 100%;
   position: fixed!important;
-  width: 87%;
-  left: 13%;
+  width: 85%;
+  left: 15%;
   background: #BAD0D9;
 }
 .topnav{
@@ -13,18 +13,20 @@
 .sidenav{
   height: 100%;
   position: fixed!important;
-  width:13%;
+  width:15%;
   z-index: 99!important;
 }
 .main .navbar{
   position: fixed!important;
-  width: 87%;
+  width: 85%;
 }
 .sidenav .navbar-nav .nav-link {
-  padding: 13px 20px!important;
+  padding: 8px 8px!important;
   color: #0e5099!important;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
+  box-shadow: inset 0px 0px 9px 1px #9ecaef, inset 0px 0px 0px 0px #DFEAF5;
+  border: 1px solid #d4d4d4;
 }
 .sidenav .navbar-nav .nav-item .nav-link:hover{
   background: #f8f9fa!important;
@@ -33,15 +35,17 @@
   padding-left: 30px;
 }
 .sidenav .navbar-nav .nav-item.active > .nav-link {
-  background: #f8f9fa!important;
-  color: #495057!important;
+  background: #4682b5!important;
+  color: #ffffff!important;
   text-decoration: none;
   padding-left: 30px;
+  box-shadow: inset 0px 0px 7px 2px #4682b5, inset 0px 0px 7px 0px #ffffff;
+  border: 1px solid #d4d4d4;
 }
 .topsecnav{
   position: fixed!important;
   top:108px;
-  left: 13%;
+  left: 15%;
   width: 100%;
   background: white;
   z-index: 99!important;
@@ -49,11 +53,26 @@
   margin-right: 40px;
 }
 .topsecnav .navbar-nav .nav-link {
-  padding :6px 25px!important; 
+  padding :8px 20px!important; 
   color: black!important;
-  font-size: 13px;
+  font-size: 8px;
   font-weight: 600;
   box-shadow: inset 0px -2px 3px 0 rgb(186 208 217), 0 0px 3px 0 rgb(186 208 217);
+}
+.sidenav .nav-item .sub_list .nav-item.active > .nav-link {
+    background: #dae8f7!important;
+    color: #495057!important;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.sidenav .nav-item .sub_list .nav-link{
+    padding: 8px 8px!important;
+    color: #0e5099!important;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 18px!important;
+    margin: 0px 0px;
+    background: snow;
 }
 .fs_18{
   font-size: 18px;
@@ -151,7 +170,7 @@
   background: #9faab7;
 }
 .option_checkbox:checked {
-  background: #40e0d0;
+  background: #005CC8;
 }
 .option_checkbox:checked::before {
   height: 15px;
@@ -309,7 +328,7 @@
 }
 /*=======side collapse=========*/
 .sidebar {
-   width: 13%;
+   width: 15%;
    -moz-transition: width 0.5s ease-out;
    -o-transition: width 0.5s ease-out;
    -webkit-transition: width 0.5s ease-out;
@@ -319,19 +338,21 @@
 }
  .nav-sidebar {
    background: none;
-   margin-top: 5px;
+   margin-top: 0px;
 }
  .sidebar ul li a span.fa {
-   font-size: 20px;
+   font-size: 18px;
 }
  .menuText {
-   left: 50px;
+   left: 29px;
    opacity: 1;
    -moz-transition: opacity 0.6s 0.2s ease-out;
    -o-transition: opacity 0.6s 0.2s ease-out;
    -webkit-transition: opacity 0.6s 0.2s ease-out;
    transition: opacity 0.6s 0.2s ease-out;
    position: absolute;
+   line-height: 2.0;
+   white-space: nowrap;
 }
  .collapseToggle {
    padding-left: 4px;
@@ -398,4 +419,35 @@
     z-index: 99!important;
     overflow-x: auto;
     margin-right: 40px;
+}
+.accordion .accord_arrow:after {
+    font-family: 'Font Awesome 5 Free';  
+    content: "\f0de";
+    float: right; 
+}
+.accordion .accord_arrow.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f0dd"; 
+} 
+.sidenav .navbar-nav .nav-item{
+    position: relative;
+} 
+.sidenav .navbar-nav .nav-item.active > .nav-link:after
+{
+    font-family: 'Font Awesome 5 Free'; 
+    content: "\f0a4";
+    right: 0; 
+    position: absolute;
+    background: transparent;  
+    animation: move 1000ms linear infinite alternate;
+}
+
+@keyframes  move {
+    0% {
+        right: 8px;
+    }
+
+    100% {
+        right: 2px;
+    }
 }
