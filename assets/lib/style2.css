@@ -451,3 +451,15 @@
         right: 2px;
     }
 }
+#example_wrapper .table tr:nth-child(1) th {
+        background-color: #3276b1!important;
+    }
+    #example_wrapper table th {
+        background: #3276b1!important;
+        border: 1px solid #dee2e6;
+        color: white;
+    }
+    #example_wrapper table td{
+        border: 1px solid #dee2e6;
+        padding: 4px 2px!important;
+    }
