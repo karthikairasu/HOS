@@ -256,7 +256,7 @@
             <h5 style="color: steelblue"> <b>Existing Order list</b> </h5>
           </div>
           <div class="col-12 text-center">
-            <table id="example" class="display example">
+            <table id="example" class="display example" style="width:100%">
               <thead>
                   <tr class="bg_color">
                       <th class="text-nowrap px-3">Store Order #</th>
@@ -266,6 +266,10 @@
                       <th class="text-nowrap px-3">Qty Ordered</th>
                       <th class="text-nowrap px-3">Ordered Date</th>
                       <th class="text-nowrap px-3">Status</th>
+                      <th class="text-nowrap">Created At</th>
+                      <th class="text-nowrap">ASN Status</th>
+                      <th class="text-nowrap">Report</th>
+                      <th class="text-nowrap">Delivery Action</th>
                   </tr>
               </thead>
               <tbody>
@@ -277,6 +281,10 @@
                       <td>15</td>
                       <td>2020-09-21</td>
                       <td><span class="text-warning"><b>NEW</b></span></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                   </tr>
                   <tr onclick="window.location.href='store_order_details.html'">
                       <td>000-000-001</td>
@@ -286,6 +294,10 @@
                       <td>15</td>
                       <td>2020-09-21</td>
                       <td><span class="text-success"><b>ACCEPTED</b></span></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                   </tr>
                   <tr onclick="window.location.href='store_order_details.html'">
                       <td>000-000-001</td>
@@ -295,6 +307,10 @@
                       <td>15</td>
                       <td>2020-09-21</td>
                       <td><span class="text-danger"><b>REJECTED</b></span></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                   </tr>
                  
               </tbody>
@@ -330,6 +346,7 @@
     $(document).ready(function() {
         $('#example').DataTable( {
             "scrollY":        "55vh",
+            "scrollY":        true,
             "scrollCollapse": true,
             "paging":         false,
             "searching": false,
