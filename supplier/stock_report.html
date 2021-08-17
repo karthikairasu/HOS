@@ -161,19 +161,19 @@
       position: relative;
       text-align: center;
       text-transform: capitalize;
-      color: #748a9d;
+      color: #464749;
       font-weight: bold;
 }
 .progressbar li:before {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     content: "";
-    line-height: 30px;
-    border: 2px solid #3cb371;
+    line-height: 25px;
+    border: 2px solid #21253D;
     display: block;
     text-align: center;
     margin: 0 auto 3px auto;
-    border-radius: 50%;
+    border-radius: 10%;
     position: relative;
     z-index: 2;
     background-color: #fff;
@@ -184,7 +184,7 @@
      content: '';
      position: absolute;
      background-color: #748a9d;
-     top: 15px;
+     top: 13px;
      left: -50%;
      z-index: 0;
 }
@@ -196,36 +196,53 @@
     font-weight: bold;  
 }
 .progressbar li.active span{
-    color: #3cb371;
+    color: #21253D;
     font-weight: bold;  
+    font-size: 10px;
 }
 .progressbar li.active:before {
-    border-color: #3cb371 ;
-    background: #3cb371 ;
+    border-color: #21253D ;
+    background: #21253D ;
  }
 .progressbar li.active + li:after    {
-    background-color: #3cb371;
-}
-.progressbar li.empty + li:after    {
-    background-color: #808080;
+    background-color: #21253D;
 }
 .progressbar li.active:before {
-    background: #3cb371 url(user.svg) no-repeat center center;
+    background: #21253D url(user.svg) no-repeat center center;
     background-size: 60%;
     content: '\2714';
     animation: changeBackground .5s linear;
     animation-fill-mode: forwards;
+    font-size: 16px;
+    color: #fff;
 }
 .progressbar li.active.visited:before {
-    box-shadow: 0 0 0 2px mediumseagreen;
+    box-shadow: 0 0 0 2px #21253D;
     border: 2px solid #fff;
 }
 .progressbar li::before {
-    background: #808080 url(user.svg) no-repeat center center;
+    background: #E4150D url(user.svg) no-repeat center center;
     background-size: 60%;
     content: 'x';
+    color: #fff;
+    border: 2px solid #E4150D;
+    font-size: 16px;
+}
+.progressbar li.inactive span{
+    color: #748a9d;
+    font-size: 10px;
+}
+.progressbar li span{
+    color: #E4150D;
+    font-size: 10px;
+}
+.progressbar li.inactive:before {
+    background: #808080 url(user.svg) no-repeat center center;
+    background-size: 60%;
+    content: '';
     color: white;
     border: 2px solid #808080;
+    font-size: 16px;
 }
   </style>
 </head>
@@ -407,8 +424,8 @@
               <ul class="progressbar">
                   <li class="active"><span class="f-10">Accepted</span></li>
                   <li class="active"><span class="f-10">Being Prepared</span></li>
-                  <li class="empty"><span class="f-10">Dispatched</span></li>
-                  <li class="empty"><span class="f-10">Received</span></li>
+                  <li class="inactive"><span class="f-10">Dispatched</span></li>
+                  <li class=""><span class="f-10">Received</span></li>
               </ul>
             </div> 
           </div>
