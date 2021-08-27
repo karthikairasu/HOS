@@ -98,7 +98,7 @@
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .main_content{
-    background: linear-gradient(180deg, #7ab5e4, #c4ddec);
+    background: linear-gradient(180deg, #1C2346, #1C2346);
     box-shadow: 0px 0px 6px 1px #969696, 0px 0px 6px 0px #9b9797;
 }
   </style>
@@ -248,38 +248,38 @@
       </nav>
       <div class="container-fluid main_content bg-white p-2 supplier_box">
         <div class="row mx-0">
-          <div class="col-10 col-md-5 mx-auto text-center">
-            <h5 class="my-4"><strong>Select Option</strong></h5>            
+          <div class="col-10 col-md-10 mx-auto text-center">
+            <h5 class="my-4 text-white"><strong>Select Option</strong></h5>            
             <form>
-             <div class="row pt-4">
-                 <div class="col-4">
-                     <div class="card card-has-bg h-100">
-                         <div class="card-bg">
-                         <div class="card-body py-5">
-                            <h5><strong>ASN</strong></h5>
-                         </div>
-                        </div>
-                     </div>
-                 </div>
-                 <div class="col-4">
+              <div class="row pt-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 my-2">
                     <div class="card card-has-bg h-100">
-                        <div class="card-bg2">
-                        <div class="card-body py-5">
-                           <h5><strong>INVOICE</strong></h5>
-                        </div>
+                         <button class="card-bg btn btn-default bg-white" type="submit" name="module_type" value="asn">
+                           <div class="card-body py-5">
+                               <h6><strong>ASN -<br>Advanced Shipping Notification</strong></h6>
+                           </div>
+                         </button>
                     </div>
-                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+                   <div class="card card-has-bg h-100">
+                       <button class="card-bg2 btn btn-default bg-white"  name="module_type" value="invoice">
+                         <div class="card-body py-5">
+                           <h6><strong><br>Supplier Invoice</strong></h6>
+                         </div>
+                       </button>
+                   </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+                 <div class="card card-has-bg h-100">
+                       <button class="card-bg2 btn btn-default bg-white" name="module_type" value="rgr">
+                         <div class="card-body py-5">
+                           <h6><strong>RGR -<br>Request for GR</strong></h6>
+                         </div>
+                       </button>
                  </div>
-                 <div class="col-4">
-                  <div class="card card-has-bg h-100">
-                      <div class="card-bg2">
-                      <div class="card-body py-5">
-                         <h5><strong>RGR</strong></h5>
-                      </div>
-                  </div>
-                  </div>
-               </div>
-             </div>
+              </div>
+            </div>
             </form>
           </div>
         </div>
