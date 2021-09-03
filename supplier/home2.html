@@ -101,6 +101,23 @@
     background: linear-gradient(180deg, #1C2346, #1C2346);
     box-shadow: 0px 0px 6px 1px #969696, 0px 0px 6px 0px #9b9797;
 }
+.announcement{
+  position:fixed;
+  bottom: 20px;
+  left:60px;
+  background: white;
+  padding: 2px;
+  padding-left: 50px;
+  width: 90%;
+  border: 2px solid #E06E0E;
+  border-radius: 5px;
+}
+.announcement .logo{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #E06E0E;
+}
   </style>
 </head>
 <body class="bg-light">
@@ -256,7 +273,7 @@
                     <div class="card card-has-bg h-100">
                          <button class="card-bg btn btn-default bg-white" type="submit" name="module_type" value="asn">
                            <div class="card-body py-5">
-                               <h6><strong>ASN -<br>Advanced Shipping Notification</strong></h6>
+                               <h6><strong>ASN <br>Advanced Shipping Notification</strong></h6>
                            </div>
                          </button>
                     </div>
@@ -274,7 +291,7 @@
                  <div class="card card-has-bg h-100">
                        <button class="card-bg2 btn btn-default bg-white" name="module_type" value="rgr">
                          <div class="card-body py-5">
-                           <h6><strong>RGR -<br>Request for GR</strong></h6>
+                           <h6><strong>RGR <br>Request for GR</strong></h6>
                          </div>
                        </button>
                  </div>
@@ -288,6 +305,13 @@
   </div>
   
   </div>
+</div>
+
+<div class="announcement">
+  <div class="logo">
+    <i class="fas fa-bullhorn fa-2x"></i>
+  </div>
+  <marquee class="pt-2" scrollamount="5"><b> Announcement Arabian Health Care Supply Com </b></marquee>
 </div>
 
 <!-- The Modal -->
