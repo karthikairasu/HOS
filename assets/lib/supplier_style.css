@@ -4,12 +4,20 @@
   src: url("../font/CoHeadlineW23ArabicRegular.woff") format("woff");
 }
 @font-face {
+  font-family: "CoHeadlineW23-ArabicLight";
+  src: url("../font/CoHeadlineW23ArabicLight.ttf");
+  src: url("../font/CoHeadlineW23ArabicLight.woff") format("woff");
+}
+@font-face {
   font-family: "Tahoma";
   src: url("../font/Tahoma Regular font.ttf");
   src: url("../font/Tahoma.woff") format("woff");
 }
 .fa_cohead {
   font-family: "CoHeadlineW23-ArabicRegular" !important;
+}
+.fa_cohead2 {
+  font-family: "CoHeadlineW23-ArabicLight" !important;
 }
 .fa_tahoma {
   font-family: "Tahoma", Sans-serif !important;
@@ -345,7 +353,7 @@ button {
   content: url("../images/nupco_market2.png");
 }
 .sidebar-nav li .collapse-inner a .fa_imgnm:before {
-  content: url("../images/non-medical2.png");
+  content: url("../images/nonm.svg");
 }
 .sidebar-nav li .collapse-inner a .fa_imgwf:before {
   content: url("../images/wasfaty2.png");
@@ -355,4 +363,34 @@ button {
 }
 .badge-danger {
   background-color: #e06e0e;
+}
+/* =====table========== */
+.example {
+  background-color: white;
+}
+.example.table th {
+  padding: 0.45rem;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  border-top: 1px solid #dee2e6;
+  background-color: #e06e0e;
+  color: white;
+  font-family: "CoHeadlineW23-ArabicRegular" !important;
+  letter-spacing: 1px;
+}
+.example.table td {
+  padding: 0.35rem;
+  vertical-align: middle;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+  font-family: "Tahoma", Sans-serif !important;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(255, 255, 255) !important;
 }
