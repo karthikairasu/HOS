@@ -601,3 +601,11 @@ button {
   border-radius: 0.65rem !important;
   border: none !important;
 }
+.card_img:hover,
+.card_img2:hover,
+.card_img3:hover,
+.card_img4:hover {
+  color: #e06e0e;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
