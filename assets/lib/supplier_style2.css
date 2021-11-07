@@ -173,3 +173,27 @@ table.dataTable thead td {
   background-color: rgb(231 142 74 / 10%);
   color: #e78e4a;
 }
+#example_filter label {
+  margin-bottom: 0px !important;
+}
+#example_filter label input {
+  height: 30px;
+}
+.btn-back {
+  background: #03a9f400 !important;
+  border-color: #000000 !important;
+  color: #000000 !important;
+}
+.btn-orange {
+  background: #e06e0e !important;
+  border-color: #e06e0e !important;
+  color: #fff !important;
+}
+.btn-info.active,
+.btn-info:focus,
+.btn-info:hover {
+  background: #0286c2;
+  border-color: #03a9f4;
+  color: #ffffff;
+  box-shadow: none;
+}
