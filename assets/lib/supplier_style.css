@@ -10,8 +10,9 @@
 }
 @font-face {
   font-family: "Tahoma";
-  src: url("../font/Tahoma Regular font.ttf");
-  src: url("../font/Tahoma.woff") format("woff");
+  src: url("../font/Tahoma.ttf");
+  src: url("../font/Tahoma.woff2") format("woff2");
+  src: url("../font/Tahoma.eot") format("eot");
 }
 .fa_cohead {
   font-family: "CoHeadlineW23-ArabicRegular" !important;
