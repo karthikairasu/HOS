@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>H2O</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- clear Cookies -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#1C2346">
+  <link rel="icon" type="image/png" href="../assets/images/fav.png" sizes="194x194">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="../assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Style files -->
+  <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- owl carousel Style files -->
+  <link href="../assets/owl.carousel/../assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="../assets/aos/aos.css" rel="stylesheet">
+  <link href="../assets/animate.css/animate.min.css" rel="stylesheet">
+  <!-- venobox Style files -->
+  <link href="../assets/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="../assets/lib/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/lib/style2.css">
+  <!--------table style lib------------------------>
+  <link rel="stylesheet" type="text/css" href="../assets/datatables/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="../assets/datatables/dataTables.bootstrap4.min.css">
+  <style type="text/css">
+      .topnav{
+        border-image: linear-gradient(
+45deg
+, #099be3 , #01dd6d);
+    border-image-slice: 1;
+    border-radius: 0px;
+      }
+    .main_content {
+        height: 89%;
+        margin: 2px 2px;
+        border-radius: 10px;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+    .sidenav {
+    height: 100%;
+    position: fixed!important;
+    width: 15%;
+    z-index: 99!important;
+    display: none;
+}
+.topsecnav {
+    position: fixed!important;
+    top: 108px;
+    left: 0%;
+    width: 100%;
+    background: white;
+    z-index: 99!important;
+    overflow-x: auto;
+    margin-right: 0px;
+}
+.main {
+    height: 100%;
+    position: fixed!important;
+    width: 100%;
+    left: 0%;
+    background: #BAD0D9;
+}
+.main .navbar {
+    position: fixed!important;
+    width: 100%;
+}
+.fore_table  th, .fore_table td {
+        padding: 3px 2px!important;
+        vertical-align: middle!important;
+        border: 1px solid #b9b9b9!important;
+    }
+    .fore_table thead tr:nth-child(1) th {
+        position: sticky;
+        top: 0px;
+        z-index: 999;
+        outline: 1px solid #8e8c8c;
+        border: 1px solid #8e8c8c;
+        font-size: 13px;
+        box-shadow: 0px 3px 4px 0px #8e8e8e;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+    .fore_table thead tr:nth-child(2) th {
+        position: sticky;
+        top: 25px;
+        z-index: 999;
+        outline: 1px solid #8e8c8c;
+        border: 1px solid #8e8c8c;
+        font-size: 13px;
+        box-shadow: 0px 3px 4px 0px #8e8e8e;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+        .head-3 th{
+        background: #002060;
+        color: white;
+        padding: 6px 2px!important;
+    }
+    .card_main_col {
+  background: #dedede;
+  border: none;
+  border-radius: 0px;
+}
+.card_main_col:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,.15);
+}
+.card_main_col .image {
+    position: relative;
+    display: block;
+    padding-top: 80%;
+    margin-bottom: 20px;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    margin: 10px;
+    background: rgba(255, 255, 255);
+}
+.card_main_col .image:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    /*background: rgba(0, 0, 0, .10);*/
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+.card_main_col:hover .image img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.card_main_col .image img {
+    -webkit-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+}
+.card_main_col .image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.main_filter .card_main_col{
+  background: #dedede;
+  font-family: 'Montserrat';
+}
+.main_filter .card_main_col figcaption label{
+  font-weight: bold;
+  color: rgba(35, 56, 81, 1);
+}   
+  </style>
+</head>
+<body class="bg-light">
+  <nav class="navbar fixed-top sticky-top-md navbar-light bg-white topnav px-2 py-0" style="height: 70px;">
+   <div class="col-3 col-sm-4 col-lg-3" style="height:40px">
+     <div class="row mx-md-0">
+       <div class="col-12 p-0 my-0 d-none d-sm-block">
+         <h6><b>H2O Category</b></h6>
+      </div>
+     </div>
+   </div>
+    <div class="col-6 col-sm-4 col-lg-6 text-center px-0">
+      <h6 class="text-danger ff_mon">
+        <img class="" src="../assets/images/h2o.png" style="width:auto;height: 60px">
+        <!-- <b class="text_shadow8"></b> --></h6>
+    </div>
+    <div class="col-3 col-sm-4 col-lg-3 text-right px-0" style="font-size: 11px;font-weight: 600;"> 
+      <div class="row">
+         <div class="col-2"></div>
+         <div class="col-8 text-right">
+           <img class="" src="../assets/images/logo1.png" height="40px" width="auto" style="margin:0px 10px">
+         </div>
+         <div class="col-2"></div>
+      </div>
+        <!-- <span class="dropdown">
+          <span class="dropdown-toggle" data-toggle="dropdown" style="color:#197c89">White Pharmacy</span> |
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </span> -->
+        <span class="d-none d-sm-block">
+        <span class="date">09/11/2020</span> |
+        <span class="time">08:09 PM</span> |
+        <span class="help">Help</span>
+        </span>
+    </div>
+  </nav><br><br>
+<div class="container-fluid px-0 mt-3">
+  <div class="row mx-0">
+    <div class="sidenav px-0 mt-2 bg-grey">
+      <ul class="navbar-nav mb-5 pb-5">
+        
+      </ul>
+    </div>
+    <div class="main px-2 py-2">
+      <div class="container-fluid main_content bg-white p-2">
+        <div class="row mx-0 px-2 py-2">
+            <div class="col-12 col-md-12 col-lg-12 main_filter">
+
+                <div class="col-12 col-md-12 bg-light my-2 py-2">
+                  <div class="row">
+                    <div class="col-8 col-md-8">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">H2O</a></li>
+                          <li class="breadcrumb-item"><a href="#">Suppliers</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">category</li>
+                        </ol>
+                      </nav>
+                    </div>
+                    <div class="col-4 col-md-4"></div>
+                  </div>
+                </div>
+      
+                <div class="row mx-0 py-3 px-2">
+                  
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2 px-2" onclick="window.location.href='sub_category.html'">
+                    <div class="card card_main_col">
+                    <div class="image">
+                      <img src="../assets/images/h2o.png" alt="product1" title="product1">
+                    </div>
+                    <div class="py-1 px-3">
+                      <figcaption class="text-left">
+                          <h6 class="f-14 text-truncate fw-600 text-logoblue" title="product1">Product1</h6>
+                          <label class="f-14"></label>
+                      </figcaption>
+                    </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2 px-2">
+                    <div class="card card_main_col">
+                    <div class="image">
+                      <img src="../assets/images/h2o.png" alt="product2" title="product2">
+                    </div>
+                    <div class="py-1 px-3">
+                      <figcaption class="text-left">
+                          <h6 class="f-14 text-truncate fw-600 text-logoblue" title="product2">Product2</h6>
+                          <label class="f-14"></label>
+                      </figcaption>
+                    </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2 px-2">
+                    <div class="card card_main_col">
+                    <div class="image">
+                      <img src="../assets/images/h2o.png" alt="product3" title="product4">
+                    </div>
+                    <div class="py-1 px-3">
+                      <figcaption class="text-left">
+                          <h6 class="f-14 text-truncate fw-600 text-logoblue" title="product3">Product3</h6>
+                          <label class="f-14"></label>
+                      </figcaption>
+                    </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2 px-2">
+                    <div class="card card_main_col">
+                    <div class="image">
+                      <img src="../assets/images/h2o.png" alt="product4" title="product4">
+                    </div>
+                    <div class="py-1 px-3">
+                      <figcaption class="text-left">
+                          <h6 class="f-14 text-truncate fw-600 text-logoblue" title="product4">Product4</h6>
+                          <label class="f-14"></label>
+                      </figcaption>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2 px-2">
+                    <div class="card card_main_col">
+                    <div class="image">
+                      <img src="../assets/images/h2o.png" alt="product4" title="product4">
+                    </div>
+                    <div class="py-1 px-3">
+                      <figcaption class="text-left">
+                          <h6 class="f-14 text-truncate fw-600 text-logoblue" title="product4">Product4</h6>
+                          <label class="f-14"></label>
+                      </figcaption>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2 px-2">
+                    <div class="card card_main_col">
+                    <div class="image">
+                      <img src="../assets/images/h2o.png" alt="product4" title="product4">
+                    </div>
+                    <div class="py-1 px-3">
+                      <figcaption class="text-left">
+                          <h6 class="f-14 text-truncate fw-600 text-logoblue" title="product4">Product4</h6>
+                          <label class="f-14"></label>
+                      </figcaption>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2 px-2">
+                    <div class="card card_main_col">
+                    <div class="image">
+                      <img src="../assets/images/h2o.png" alt="product4" title="product4">
+                    </div>
+                    <div class="py-1 px-3">
+                      <figcaption class="text-left">
+                          <h6 class="f-14 text-truncate fw-600 text-logoblue" title="product4">Product4</h6>
+                          <label class="f-14"></label>
+                      </figcaption>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2 px-2">
+                    <div class="card card_main_col">
+                    <div class="image">
+                      <img src="../assets/images/h2o.png" alt="product4" title="product4">
+                    </div>
+                    <div class="py-1 px-3">
+                      <figcaption class="text-left">
+                          <h6 class="f-14 text-truncate fw-600 text-logoblue" title="product4">Product4</h6>
+                          <label class="f-14"></label>
+                      </figcaption>
+                    </div>
+                    </div>
+                  </div>
+      
+                </div>
+                <!--category  row close  -->
+      
+                
+              </div>
+
+        </div>
+      </div><br>
+    </div>
+  </div>
+  
+  </div>
+</div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="../assets/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../assets/MDB-free/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../assets/owl.carousel/owl.carousel.min.js"></script>
+  <!-- aos script files -->
+  <script src="../assets/aos/aos.js"></script>
+  <!-- venobox script files -->
+  <script src="../assets/venobox/venobox.min.js"></script>
+  <!-- script files -->
+  <script src="../assets/lib/crs.min.js"></script>
+  <script src="../assets/lib/script.js"></script>
+  <!--------table style lib------------------------>
+  <script src="../assets/datatables/jquery.dataTables.min.js"></script>
+  <script src="../assets/datatables/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.example').DataTable( {
+            "scrollY":        "55vh",
+            "scrollCollapse": true,
+            "paging":         false,
+            "searching": false,
+            "lengthMenu": [ [15, 30, 50, 100, 250, 500, 1000, 1500], [15, 20, 50, 100, 250, 500, 1000, 1500] ],
+            "iDisplayLength": 1000,
+        } );
+    } );
+  </script>
+</body>
+</html>
