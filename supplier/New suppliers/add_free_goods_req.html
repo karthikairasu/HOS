@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HOS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- clear Cookies -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#1C2346">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png" sizes="194x194">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="../../assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Style files -->
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- owl carousel Style files -->
+  <link href="../../assets/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="../../assets/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/animate.css/animate.min.css" rel="stylesheet">
+  <!-- venobox Style files -->
+  <link href="../../assets/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="manifest" href="../../assets/lib/manifest.json">
+  <link rel="stylesheet" type="text/css" href="../../assets/lib/supplier_style2.css">
+  <!--------table style lib------------------------>
+  <!-- <link rel="stylesheet" type="text/css" href="../../assets/datatables/jquery.dataTables.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/dataTables.bootstrap4.min.css">
+
+  <link href="../../assets/lib/themify-icons.css" rel="stylesheet">
+    
+  <link href="../../assets/lib/weather-icons.css" rel="stylesheet" />
+  <link href="../../assets/lib/sidebar.css" rel="stylesheet">
+
+  <link href="../../assets/lib/helper.css" rel="stylesheet">
+
+  <link href="../../assets/lib/style4.css" rel="stylesheet">
+  <style type="text/css">
+  .fs_12{
+  font-size: 12px;
+}
+#reservation_req_form .bg_color{
+        background-color: steelblue!important;
+        color: #fff!important;
+    }
+    #reservation_req_form_wrapper .table .bg_color th {
+        background-color: steelblue!important;
+        color: #fff!important;
+    }
+    #reservation_req_form_wrapper .table tr:nth-child(1) th {
+        background-color: white!important;
+    }
+    #reservation_req_form_wrapper .table{
+       font-size: 13px!important;
+    }
+    table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before {
+        right: 1px;
+    }
+    .bg-blue{
+      background: #3276b1!important;
+    }
+    #reservation_req_form_wrapper .table tr:nth-child(1) th {
+    background-color: #3276b1!important;
+}
+.h_1rem{
+  height: calc(1.5rem + 2px)!important;
+  font-size: .80rem!important;
+}
+#reservation_req_form .head_table .gj-datepicker-bootstrap [role=right-icon] button .gj-icon {
+    position: absolute;
+    font-size: 21px;
+    top: 6px;
+    left: 9px;
+}
+.h_sm{
+  height: calc(1.8125rem + 2px)!important;
+}
+.search_data thead tr:nth-child(1) th{
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  padding: 4px 4px;
+  /* outline: 1px solid #4682b5; */
+  font-size: 13px;
+  box-shadow: 0px 0px 1px 1px #ffffff, 0px 0px 1px 1px #ffffff;
+  background: #4682b5;
+}
+.fixed_height{
+  height: 53vh;
+  overflow-y: auto;
+}
+#preloader {
+  background: transparent!important;
+}
+  </style>
+
+</head>
+<body class="fa_tahoma">
+    
+  <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+    <div class="nano">
+        <div class="nano-content">
+            <ul>
+                <div class="logo">
+                  <a href="home.html">
+                    <img class="pr-2" src="../../assets/images/resource/white_logo.png" style="height: 45px; width:auto;margin-top: -11px;" alt="" />
+                    <span class="fa_cohead">Supplier Portal</span>
+                  </a>
+                </div>
+                <!-- <li class="label">Main</li> -->
+                <li><a class="sidebar-sub-toggle"><i class="fas fa-home fs_18"></i>&ensp; Home</a>
+                </li>
+                <li><a class="sidebar-sub-toggle">
+                    <i class="fas fa-tachometer-alt fs_18"></i>&ensp; ASN Home</a>
+                </li>
+
+                <!-- <li class="label">Apps</li> -->
+                <li><a class="sidebar-sub-toggle"><i class="fas fa-list fs_18"></i>&ensp; ASN <span
+                            class="sidebar-collapse-icon fas fa-chevron-down"></span></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-tachometer-alt fs_18"></i> Dashboard </a></li>
+                        <li><a href="#"><i class="fas fa-pills fs_18"></i> ASN PO List</a></li>
+                    </ul>
+                </li>
+                <li><a class="sidebar-sub-toggle"><i class="fas fa-list fs_18"></i>&ensp; Request PO <span
+                    class="sidebar-collapse-icon fas fa-chevron-down"></span></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-tachometer-alt fs_18"></i> Request Reservation </a></li>
+                        <li><a href="#"><i class="fas fa-pills fs_18"></i> Request Reservation List</a></li>
+                    </ul>
+                </li>
+                <li class="active open"><a class="sidebar-sub-toggle"><i class="fas fa-list fs_18"></i>&ensp; Free Goods PO <span
+                    class="sidebar-collapse-icon fas fa-chevron-down"></span></a>
+                    <ul>
+                        <li class="active"><a href="#"><i class="fas fa-tachometer-alt fs_18"></i> Request for Free Goods PO </a></li>
+                        <li><a href="#"><i class="fas fa-pills fs_18"></i> Request for Free Goods PO List</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a><img src="../../assets/images/resource/logout_black_48dp.svg" alt="" height="20" width="20"/>&ensp;Logout</a></li> -->
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /# sidebar -->
+
+<div class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="float-left">
+                    <div class="hamburger sidebar-toggle">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="float-left">
+                  <div class="px-4 pt-3" style="font-size: 14px;">
+                    <img src="../../assets/images/resource/user.svg" alt="phone" height="20" width="20"/> &ensp; 400034 - Saichiya Trading Co.
+                  </div>
+                  <div class="float-center">
+                    <div class="px-4 pt-3" style="font-size: 14px;">            
+                        <b>Jeddah - MOH Stock - MOH Stock</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="float-right">
+                  <div class="dropdown dib">
+                    <div class="p-0" style="font-size: 12px;"> 03/10/2021 | 10:29:29 PM</div>
+                  </div>
+                  <div class="dropdown dib">
+                    <div class="px-4" style="font-size: 12px;"> <img src="../../assets/images/resource/email2.svg" alt="phone" height="20" width="20"/>  technicalsupport@nupco.com</div>
+                  </div>
+                    <div class="dropdown dib">
+                      <div class="p-0" style="font-size: 12px;"> <img src="../../assets/images/resource/phone.svg" alt="phone" height="15" width="15"/>  1800 345 0000</div>
+                        <div class="header-icon" data-toggle="dropdown" style="font-size: 13px;">
+                        <a href="" class="pt-4">
+                          <img src="../../assets/images/resource/logout_black_48dp.svg" alt="" height="16" width="16"/> <span class="m-0"><b> Sign out</b></span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-wrap">
+  <div class="main">
+      <div class="container-fluid px-0">
+          <div class="row mx-0">
+            <div class="col-lg-12 px-0 py-0">
+              <div class="card mt-1 mb-0 py-2 fa_tahoma">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h5 class="px-3 fa_tahoma"><b>Reservation Request</b></h5>
+                    </div>
+                    <div class="col-lg-7">
+                        <ul class="filter_sec">
+                            <li class="nav-item">
+                                <a class="nav-link isDisabled" href="">
+                                    <i class="fas fa-copy fs_18"></i><br>
+                                    Copy</a>
+                            </li>
+                            <li class="nav-item" id="delete_row">
+                                <a class="nav-link  isDisabled " href="#">
+                                    <i class="fas fa-trash fs_18"></i><br>
+                                    Delete</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link isDisabled" href="#">
+                                    <i class="fas fa-search fs_18"></i><br>
+                                    Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link isDisabled" href="#">
+                                    <i class="fas fa-filter fs_18"></i><br>
+                                    Filter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link isDisabled" href="#">
+                                    <i class="fas fa-print fs_18"></i><br>
+                                    Print</a>
+                            </li>
+                            <li class="nav-item">
+                                <input id="upload_excel" type="file" style="display:none"/>
+                                <a class="nav-link" href="#" id="import_excel_stop">
+                                    <i class="fas fa-file-export fs_18"></i><br>
+                                    Import</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link isDisabled" href="#">
+                                    <i class="fas fa-file-import fs_18"></i><br>
+                                    Export</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  isDisabled "  href="#" id="attachment">
+                                    <i class="fas fa-paperclip fs_18"></i><br>
+                                    Attach</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link isDisabled" href="#">
+                                    <i class="fas fa-certificate fs_18"></i><br>
+                                    Catelogue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  isDisabled " id="addRow">
+                                    <i class="fas fa-plus fs_18"></i><br>
+                                    Add&nbsp;Row</a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+        <div class="col-lg-12 px-0 py-0">
+            <div class="card my-0 p-0">
+                <form id="reservation_req_form" class="mb-0 w-100" method="POST" action="https://ansara.in/HOS_S4/supplier/reservation-req-add">
+                  <input type="hidden" name="_token" value="TPE2vf9no6j7MVIOpc1PlzEz87xw9QQXhNaX97ta">            <input type="hidden"  name="vendor_code" id="vendor_code" value="400034">
+                  <input type="hidden"  name="customer" id="customer" value="MOH Stock">
+                  <table class="table table-borderless head_table text-center mb-2" style="font-size: 13px">
+                    <thead>
+                       <tr>
+                        <th width="1%" class="p-0">&ensp;</th>
+                         <th width="10%" class="p-0 text-left">
+                          <label for="supplying-plant"><b>Supplying Plant:</b></label><br>
+                          <input type="hidden" name="plant" id="plant" value="W2C1">
+                          <input type="text" class="form-control h_sm fs_12 mb-1" value="C.WH in Jeddah for MOH" readonly>
+                        </th>
+                          <th width="1%" class="p-0">&ensp;</th>
+                          <th width="10%" class="p-0 text-left">
+                              <label for="supplying-plant"><b>Storage Location:</b></label><br>
+                              <input type="hidden" name="sloc" id="sloc" value="1000">
+                              <input type="text" class="form-control h_sm fs_12 mb-1" value="MOH Stock" readonly>
+                          </th>
+                          <th width="1%" class="p-0">&ensp;</th>
+                          <th width="10%" class="p-0 text-left">
+                              <label for="supplying-plant"><b>Customer PO No:</b></label><br>
+                              <input type="text" class="form-control h_sm fs_12 mb-1" id="customer_po_no" name="customer_po_no" required autocomplete="off">
+                          </th>
+                          <th width="1%" class="p-0">&ensp;</th>
+                          <th width="10%" class="p-0 text-left">
+                           <label for="delivery-date"><b>Delivery Date:</b></label><br>
+                           <input type="" class="datepicker form-control form-control-sm h_sm fs_12 mb-1" name="delivery_date" id="delivery_date"  required autocomplete="off" onkeydown="return false">
+                         </th>
+                       </tr>
+                    </thead>
+                  </table>
+                    <div class="col-12 text-center fixed_height" style="overflow-x:auto">
+                        <table id="example" class="display example search_data nor_table" style="width:100%">
+                          <thead>
+                              <tr class="bg_color ">
+                                <th class="text-nowrap px-0 w_1"><input type="checkbox" id="check_all"></th>
+                                <th class="text-nowrap px-1 w_3">Customer Code</th>
+                                <th class="text-nowrap px-1 w_3">Nupco Generic</th>
+                                <th class="text-nowrap px-1 w_3">Nupco Trade Code</th>
+                                <th class="text-nowrap px-1 w_12">Description</th>
+                                <th class="text-nowrap px-1 w_5">Qty</th>
+                                <th class="text-nowrap px-0 w_2">UOM</th>
+                                <th class="text-nowrap px-0 w_3">Catalog Number/Reference</th>
+                                <th class="text-nowrap px-0 w_3">Mft Name</th>
+                                <th class="text-nowrap px-0 w_3">Trade Name</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr><td width="3%" class="p-0"><input type="checkbox" data-row_id="1"></td><td class="p-0"><input type="text" class="material_data form-control h_1rem" data-row_id="1" data-name="customer_code" id="customer_code_1" name="customer_code[]" maxlength="20" autocomplete="off"><div id="customer_code_list_1" class="position-relative"></div></td><td class="p-0"><input type="text" class="material_data form-control h_1rem" data-row_id="1" data-name="nupco_generic_code" id="nupco_generic_code_1" name="nupco_generic_code[]" maxlength="20" autocomplete="off"><div id="nupco_generic_code_list_1" class="position-relative"></div></td><td class="p-0"><input type="text" class="material_data form-control h_1rem" data-row_id="1" data-name="nupco_trade_code" id="nupco_trade_code_1" name="nupco_trade_code[]" maxlength="20" autocomplete="off"><div id="nupco_trade_code_list_1" class="position-relative"></div></td><td class="p-0"><input type="text" class="material_data form-control h_1rem" data-row_id="1" data-name="nupco_desc" id="nupco_desc_1" name="nupco_desc[]" autocomplete="off"><div id="nupco_desc_list_1" class="position-relative"></div></td><td class="p-0"><input type="text" class="form-control h_1rem qty_input" data-row_id="1" data-name="qty" id="qty_1" name="qty[]" onkeypress="return onlyNumberKey(event)" maxlength="15" autocomplete="off" readonly=""></td><td class="p-0"><input type="text" class="form-control h_1rem" data-row_id="1" data-name="unit_price" id="unit_price_1" name="unit_price[]" readonly=""></td><td class="p-0"><input type="text" class="form-control h_1rem" data-row_id="1" data-name="currency" id="currency_1" name="currency[]" readonly=""></td><td class="p-0"><input type="text" class="form-control h_1rem" data-row_id="1" data-name="mfg_name" id="mfg_name_1" name="mfg_name[]" readonly=""></td><td class="p-0"><input type="text" class="form-control h_1rem" data-row_id="1" data-name="trade_name" id="trade_name_1" name="trade_name[]" readonly=""></td></tr>
+                            <tr><td width="3%" class="p-0"><input type="checkbox" data-row_id="1"></td><td class="p-0"><input type="text" class="material_data form-control h_1rem" data-row_id="1" data-name="customer_code" id="customer_code_1" name="customer_code[]" maxlength="20" autocomplete="off"><div id="customer_code_list_1" class="position-relative"></div></td><td class="p-0"><input type="text" class="material_data form-control h_1rem" data-row_id="1" data-name="nupco_generic_code" id="nupco_generic_code_1" name="nupco_generic_code[]" maxlength="20" autocomplete="off"><div id="nupco_generic_code_list_1" class="position-relative"></div></td><td class="p-0"><input type="text" class="material_data form-control h_1rem" data-row_id="1" data-name="nupco_trade_code" id="nupco_trade_code_1" name="nupco_trade_code[]" maxlength="20" autocomplete="off"><div id="nupco_trade_code_list_1" class="position-relative"></div></td><td class="p-0"><input type="text" class="material_data form-control h_1rem" data-row_id="1" data-name="nupco_desc" id="nupco_desc_1" name="nupco_desc[]" autocomplete="off"><div id="nupco_desc_list_1" class="position-relative"></div></td><td class="p-0"><input type="text" class="form-control h_1rem qty_input" data-row_id="1" data-name="qty" id="qty_1" name="qty[]" onkeypress="return onlyNumberKey(event)" maxlength="15" autocomplete="off" readonly=""></td><td class="p-0"><input type="text" class="form-control h_1rem" data-row_id="1" data-name="unit_price" id="unit_price_1" name="unit_price[]" readonly=""></td><td class="p-0"><input type="text" class="form-control h_1rem" data-row_id="1" data-name="currency" id="currency_1" name="currency[]" readonly=""></td><td class="p-0"><input type="text" class="form-control h_1rem" data-row_id="1" data-name="mfg_name" id="mfg_name_1" name="mfg_name[]" readonly=""></td><td class="p-0"><input type="text" class="form-control h_1rem" data-row_id="1" data-name="trade_name" id="trade_name_1" name="trade_name[]" readonly=""></td></tr>
+                          </tbody>
+                        </table>
+                        <div id="preloader" style="display:none"></div>
+                      </div>
+                      <div class="col-12 text-center">
+                        <!-- <button id="reservation_req_submit" class="btn btn-info my-2">Create Order</button> -->
+                        <button id="reservation_req_submit" class="btn btn-info btn-sm my-0 mt-1" type="submit">Submit</button>
+                      </div>
+                </form>
+                </div>
+                </div><br>
+              </div>
+            </div>
+        </div>
+</div> 
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="../../assets/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../../assets/MDB-free/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../../assets/owl.carousel/owl.carousel.min.js"></script>
+  <!-- aos script files -->
+  <script src="../../assets/aos/aos.js"></script>
+  <!-- venobox script files -->
+  <script src="../../assets/venobox/venobox.min.js"></script>
+  <!-- script files -->
+  <script src="../../assets/lib/crs.min.js"></script>
+  <script src="../../assets/lib/script.js"></script>
+  <!--------table style lib------------------------>
+  <script src="../../assets/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../assets/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script src="../../assets/lib/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="../../assets/lib/sidebar.js"></script>
+    <script src="../../assets/lib/pace.min.js"></script>
+    <!-- sidebar -->
+
+    <script src="../../assets/lib/scripts.js"></script>
+    <!-- bootstrap -->
+        
+    <!-- scripit init-->
+    <!-- <script src="../../assets/lib/dashboard2.js"></script> -->
+    <script>
+      $(document).ready(function(){
+          $("table").css("width", "100%");
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('.example').DataTable( {
+            "scrollY":        "44vh",
+            "scrollCollapse": true,
+            "paging":         false,
+            "searching": false,
+            "lengthMenu": [ [15, 30, 50, 100, 250, 500, 1000, 1500], [15, 20, 50, 100, 250, 500, 1000, 1500] ],
+            "iDisplayLength": 1000,
+            "ordering": false // all 
+            //"columnDefs": [ { orderable: false, targets: [0] }], //individual column
+        } );
+        for(let i=0; i<=9; i++){
+          $("#add_Row").click();
+        }
+    } );
+      //Click on add row and add new row in table
+    var Counter = "1";
+    $("#add_Row").click(function(){
+    $('#example').append('<tr class="unit-table"><td><input type="checkbox" class="option_checkbox" name=""></td> <td>'+Counter+'</td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td></tr>'); 
+    Counter ++;
+  });
+  $(".selectAll").click(function(){
+        $("input[type=checkbox]").prop('checked', $(this).prop('checked'));
+
+   });
+    </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HOS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- clear Cookies -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#1C2346">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="194x194">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Style files -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- owl carousel Style files -->
+  <link href="assets/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="assets/aos/aos.css" rel="stylesheet">
+  <link href="assets/animate.css/animate.min.css" rel="stylesheet">
+  <!-- venobox Style files -->
+  <link href="assets/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="manifest" href="assets/lib/manifest.json">
+  <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/lib/style2.css">
+  <!--------table style lib------------------------>
+  <link rel="stylesheet" type="text/css" href="assets/datatables/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="assets/datatables/dataTables.bootstrap4.min.css">
+  <style type="text/css">
+    #example .bg_color{
+        background-color: steelblue!important;
+        color: #fff!important;
+    }
+    #example_wrapper .table .bg_color th {
+        background-color: steelblue!important;
+        color: #fff!important;
+    }
+    #example_wrapper .table tr:nth-child(1) th {
+        background-color: white!important;
+    }
+    #example_wrapper .table{
+       font-size: 13px;
+    }
+    table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before { 
+        right: 1px;
+    }
+    .bg-blue{
+      background: #3276b1!important;
+    }
+    #example_wrapper .table tr:nth-child(1) th {
+    background-color: #3276b1!important;
+}
+
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:1em;
+    position:relative
+}
+.tree ul ul {
+    margin-left:.5em
+}
+.tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid
+}
+.tree li {
+    margin:0;
+    padding:0 .80em;
+    line-height:2em;
+    color:#369;
+    font-weight:700;
+    position:relative;
+    font-size: 12px;
+}
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+.tree ul li:last-child:before {
+    background: #e2e2e2;
+    height:auto;
+    top:1em;
+    bottom:0
+}
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#369;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#369;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+  </style>
+</head>
+<body class="bg-light">
+  <nav class="navbar fixed-top navbar-light bg-white topnav px-2 py-0" style="height: 108px;">
+   <div class="col-3" style="height:70px">
+     <div class="row mx-0">
+       <div class="col-3 p-0">
+         <img src="assets/images/Minis.png" class="img-fluid" height="70px" width="auto">
+      </div>
+       <div class="col-9 p-0 d-flex align-items-center">
+        <span>
+         <b  class="text-nowrap" style="color: #108f68;font-size: 12px">King Fad Military Medical Complex</b>
+         <b class="d-block text-center" style="color: #108f68;font-size: 12px">Kingdom of Saudi Arabia</b>
+        </span>
+       </div>
+     </div>
+   </div>
+    <div class="col-6 text-center px-0">
+      <h4 class="text-danger ff_mon">
+        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px"><br>
+        <b class="text_shadow">NUPCO HOSPITAL ORDERING PORTAL</b></h4>
+    </div>
+    <div class="col-3 text-right px-0" style="font-size: 11px;font-weight: 600;"> 
+      <div class="row">
+         <div class="col-12 text-center">
+           <img class="" src="assets/images/logo2.png" height="50px" width="auto" style="margin:16px 10px">
+         </div>
+      </div>
+        <!-- <span class="dropdown">
+          <span class="dropdown-toggle" data-toggle="dropdown" style="color:#197c89">White Pharmacy</span> |
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </span> -->
+        <span style="color:#197c89;">09/11/2020</span> |
+        <span style="color:#8a8c8d;">08:09 PM</span> |
+        <span style="color:#8a8c8d;">Help</span>
+    </div>
+  </nav><br><br><br><br>
+<div class="container-fluid px-0">
+  <div class="row mx-0">
+    <div class="sidenav px-0 mt-2 bg-grey">
+      <ul class="list-group">
+        <li  class="nav-item bg-white" style="padding: 18px 20px;font-size: 16px">
+          &ensp;</li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item mb-1 accordion active" id="accordion">
+          <a class="nav-link accord_arrow" data-toggle="collapse" href="#collapseOne">
+             <i class="fas fa-dolly-flatbed fs_18"></i>&ensp; Material List
+          </a>
+          <div id="collapseOne" class="panel-collapse collapse show" data-parent="#accordion">
+             <ul class="navbar-nav sub_list">
+                <li class="nav-item my-1">
+                  <a class="nav-link" href="">
+                        <i class="fas fa-warehouse"></i> &ensp;Customer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">
+                        <i class="fab fa-digital-ocean"></i> &ensp;Generic code</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">
+                        <i class="fab fa-digital-ocean"></i> &ensp;Trade code</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">
+                        <i class="fab fa-digital-ocean"></i> &ensp;Generic code</a>
+                </li>
+              </ul>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="main px-3 py-5">
+      <nav class="navbar navbar-expand navbar-light bg-white shadow topsecnav py-0 px-0">
+        <a class="navbar-brand mr-0" href="#" style=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 57px">
+          <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="">
+              <i class="fas fa-copy fs_18"></i><br> 
+              Copy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-trash fs_18"></i><br> 
+              Delete</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-search fs_18"></i><br>  
+              Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-filter fs_18"></i><br> 
+              Filter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-print fs_18"></i><br> 
+              Print</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-file-export fs_18"></i><br> 
+              Export</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-paperclip fs_18"></i><br> 
+              Attach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-certificate fs_18"></i><br> 
+              Catelogue</a>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item px-2">
+            <a>
+              <form name="lang_switch" id="lang_switch">
+              <select name="lang" id="lang" class="form-control" style="box-shadow: none!important; border: 2px solid #45CBD3;">
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+              </select>
+            </form>
+            </a>
+          </li>
+          <li class="nav-item px-2 py-1">
+            <a href="index.html"><span class="badge badge-dark p-2" title="logout"><i class="fas fa-power-off"></i></span>
+            </a>
+          </li>
+          <li class="nav-item px-2 py-1">
+            <a>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+      <div class="container-fluid main_content bg-white p-2">
+        <div class="row mx-0 justify-content-center">
+          <div class="col-12 text-center">
+            <h5 style="color: steelblue"> <b>Existing Order list</b> </h5>
+          </div>
+          <div class="col-6 mx-auto text-center">
+            <div class="card bg-success" style="height:200px">
+            <select class="form-control form-user" id="select-state" placeholder="Pick a state...">
+                <option value="">Select a state...</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div><br>
+    </div>
+  </div>
+  
+  </div>
+</div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/MDB-free/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/owl.carousel/owl.carousel.min.js"></script>
+  <!-- aos script files -->
+  <script src="assets/aos/aos.js"></script>
+  <!-- venobox script files -->
+  <script src="assets/venobox/venobox.min.js"></script>
+  <!-- script files -->
+  <script src="assets/lib/crs.min.js"></script>
+  <script src="assets/lib/script.js"></script>
+  <!--------table style lib------------------------>
+  <script src="assets/datatables/jquery.dataTables.min.js"></script>
+  <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+  <script type="text/javascript">
+
+$(document).ready(function () {
+      $('select').selectize({
+          sortField: 'text'
+      });
+  });
+    $(document).ready(function() {
+        $('#example').DataTable( {
+            "scrollY":        "55vh",
+            "scrollCollapse": true,
+            "paging":         false,
+            "searching": false,
+            "lengthMenu": [ [15, 30, 50, 100, 250, 500, 1000, 1500], [15, 20, 50, 100, 250, 500, 1000, 1500] ],
+            "iDisplayLength": 1000,
+            "columnDefs": [
+              { "width": "20%", "targets": 1 }
+            ]
+        } );
+    } );
+  </script>
+  <script>
+    $( '.topsecnav .navbar-nav .nav-link' ).on( 'click', function () {
+      $( '.topsecnav .navbar-nav' ).find( '.nav-item.active' ).removeClass( 'active' );
+      $( this ).parent( '.nav-item' ).addClass( 'active' );
+    });
+  </script>
+  <script type="text/javascript">
+    $( '.sidenav .navbar-nav .nav-link' ).on( 'click', function () {
+      $( '.sidenav .navbar-nav' ).find( '.nav-item.active' ).removeClass( 'active' );
+      $( this ).parent( '.nav-item' ).addClass( 'active' );
+    });
+  </script>
+  <script type="text/javascript">
+    $.fn.extend({
+  treed: function (o) {
+    var openedClass = "glyphicon-minus-sign";
+    var closedClass = "glyphicon-plus-sign";
+
+    if (typeof o != "undefined") {
+      if (typeof o.openedClass != "undefined") {
+        openedClass = o.openedClass;
+      }
+      if (typeof o.closedClass != "undefined") {
+        closedClass = o.closedClass;
+      }
+    }
+
+    //initialize each of the top levels
+    var tree = $(this);
+    tree.addClass("tree");
+    tree
+      .find("li")
+      .has("ul")
+      .each(function () {
+        var branch = $(this); //li with children ul
+        branch.prepend(
+          "<i class='indicator glyphicon " + closedClass + "'></i>"
+        );
+        branch.addClass("branch");
+        branch.on("click", function (e) {
+          if (this == e.target) {
+            var icon = $(this).children("i:first");
+            icon.toggleClass(openedClass + " " + closedClass);
+            $(this).children().children().toggle();
+          }
+        });
+        branch.children().children().toggle();
+      });
+    //fire event from the dynamically added icon
+    tree.find(".branch .indicator").each(function () {
+      $(this).on("click", function () {
+        $(this).closest("li").click();
+      });
+    });
+    //fire event to open branch if the li contains an anchor instead of text
+    tree.find(".branch>a").each(function () {
+      $(this).on("click", function (e) {
+        $(this).closest("li").click();
+        e.preventDefault();
+      });
+    });
+    //fire event to open branch if the li contains a button instead of text
+    tree.find(".branch>button").each(function () {
+      $(this).on("click", function (e) {
+        $(this).closest("li").click();
+        e.preventDefault();
+      });
+    });
+  }
+});
+
+//Initialization of treeviews
+
+$("#tree1").treed();
+
+$("#tree2").treed({
+  openedClass: "fas fa-folder-open",
+  closedClass: "fas fa-folder"
+});
+
+$("#tree3").treed({
+  openedClass: "glyphicon-chevron-right",
+  closedClass: "glyphicon-chevron-down"
+});
+
+  </script>
+</body>
+</html>
+

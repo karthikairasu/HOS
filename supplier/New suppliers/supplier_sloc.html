@@ -74,10 +74,112 @@
         color: #E06E0E!important;
         text-decoration:none;
     }
+
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgb(29 36 69);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+     h1 {
+   color: rgba(24, 25, 27, 1);
+   margin-bottom: 2rem;
+}
+ section {
+   display: flex;
+   flex-flow: row wrap;
+}
+ section > div {
+   flex: 1;
+   padding: 0.5rem;
+}
+ input[type="radio"] {
+   display: none;
+}
+ input[type="radio"]:not(:disabled) ~ label {
+   cursor: pointer;
+}
+ input[type="radio"]:disabled ~ label {
+   color: rgba(188, 194, 191, 1);
+   border-color: rgba(188, 194, 191, 1);
+   box-shadow: none;
+   cursor: not-allowed;
+}
+ label {
+   height: 80%;
+   display: block;
+   background: white;
+   border: 2px solid rgba(32, 223, 128, 1);
+   border-radius: 20px;
+   padding: 1rem;
+   margin-bottom: 1rem;
+   text-align: center;
+   box-shadow: 0px 3px 10px -2px rgba(161, 170, 166, 0.5);
+   position: relative;
+}
+ input[type="radio"]:checked + label {
+   background: red;
+   border-color: red;
+   color: rgba(255, 255, 255, 1);
+   box-shadow: 0px 0px 20px rgba(0, 255, 128, 0.75);
+}
+ input[type="radio"]:checked + label::after {
+   color: rgba(61, 63, 67, 1);
+   font-family: 'Font Awesome 5 Free';
+   border: 2px solid rgba(29, 201, 115, 1);
+   content: "✓";
+   font-size: 20px;
+   position: absolute;
+   top: -25px;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 35px;
+   width: 35px;
+   line-height: 30px;
+   text-align: center;
+   border-radius: 50%;
+   background: white;
+   box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+}
+ input[type="radio"]#control_05:checked + label {
+   background: red;
+   border-color: red;
+}
+ p {
+   font-weight: 900;
+}
+ @media  only screen and (max-width: 700px) {
+   section {
+     flex-direction: column;
+  }
+}
+ .btn_orange {
+    border: 1px solid #1c2346;
+    padding: .375rem 2.75rem;
+    font-size: 0.8rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background: #fff;
+    color: #1c2346;
+}
+.btn_orange:hover {
+    border: 1px solid transparent;
+    padding: .375rem 2.75rem;
+    font-size: 0.8rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background: #e33118;
+    color: white;
+}
+.disable{
+    pointer-events: none;
+    opacity: 0.4;
+    color: gray;
+}
   </style>
 
 </head>
-<body class="fa_cohead">
+<body class="fa_cohead bg-light">
     
       <nav class="navbar navbar-expand-sm navbar-dark fixed-top navbar_top justify-content-end pb-0">
         <div class="p-0"> 03/10/2021 | 10:29:29 PM</div>
@@ -121,67 +223,36 @@
         </nav>
     <br><br><br><br>
     <main>
-        <section class="services">
-            <div class="container-fluid pt-2">
-                <svg viewBox="0 0 12 1.2">
-                    <text class="fa_tahoma" x="0" y="1" text-anchor="start" font-size="0.7" fill="none" stroke-width=".015" stroke="#e06e0e" font-family="sans-serif" width="100%" height="100%">OUR SERVICES</text>
-                </svg>
-                <p class="mt-2 px-2" style="font-size: 20px;"><b>Welcome to Supplier Portal,<br> please select one of the services below:</b></p>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 pb-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../assets/images/resource/delivery-schedule2.svg" alt="" height="50" width="50">
-                                        <p class="mb-0"><b>Advanced Shipping <br>Notification (ASN)</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 pb-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../assets/images/resource/correct2.svg" alt="" height="50" width="50">
-                                        <p class="mb-0"><b>Request for GR<br>(RGR)</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 pb-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../assets/images/resource/report2.svg" alt="" height="50" width="50">
-                                        <p class="mb-0"><b>NUPCO CARE<br>&ensp;</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 pb-3 pb-sm-3 pb-lg-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../assets/images/resource/bill2.svg" alt="" height="50" width="50">
-                                        <p class="mb-0"><b>Supplier Invoice<br>&ensp;</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 pb-3 pb-sm-3 pb-lg-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../assets/images/resource/time-management2.svg" alt="" height="50" width="50">
-                                        <p class="mb-0"><b>Contract Expediting <br>Management (CEM)</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 pb-3 pb-sm-3 pb-lg-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../assets/images/resource/report2.svg" alt="" height="50" width="50">
-                                        <p class="mb-0"><b>Request for GR<br>(RGR)</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="fa_cohead">
+            <div class="col-12 mx-auto p-2">
+                <a class="nav-link" href="https://ansara.in/HOS_S4/supplier/home">
+                    <button class="btn btn-info">Back</button>
+                </a>
             </div>
+            <div class="container-fluid main_content bg-white p-2 d-flex align-items-center justify-content-center supplier_box my-4">
+                <div class="row mx-0">
+                  <div class="col-12 text-center">
+                    <form>
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="mb-4">Select Storage Location…</h6>
+                                <section id="customer_section">
+                                              <div>
+                                  <input type="radio" id="sloc_0" name="sloc" value="1000" required="">
+                                      <label for="sloc_0">
+                                      <h6>MOH Stock</h6>
+                                      </label>
+                                  </div>
+                                              </section>
+                            </div>
+                            <div class="card-footer">
+                               <button class="btn btn_orange btn-sm" type="submit">SUBMIT</button>
+                            </div>
+                          </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
         </section>
     </main>
     <div class="FAQ">

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HOS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- clear Cookies -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#1C2346">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png" sizes="194x194">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="../../assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Style files -->
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- owl carousel Style files -->
+  <link href="../../assets/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="../../assets/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/animate.css/animate.min.css" rel="stylesheet">
+  <!-- venobox Style files -->
+  <link href="../../assets/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="manifest" href="../../assets/lib/manifest.json">
+  <link rel="stylesheet" type="text/css" href="../../assets/lib/supplier_style2.css">
+  <!--------table style lib------------------------>
+  <!-- <link rel="stylesheet" type="text/css" href="../../assets/datatables/jquery.dataTables.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/dataTables.bootstrap4.min.css">
+
+  <link href="../../assets/lib/themify-icons.css" rel="stylesheet">
+    
+  <link href="../../assets/lib/weather-icons.css" rel="stylesheet" />
+  <link href="../../assets/lib/sidebar.css" rel="stylesheet">
+
+  <link href="../../assets/lib/helper.css" rel="stylesheet">
+
+  <link href="../../assets/lib/style4.css" rel="stylesheet">
+  <style type="text/css">
+  .fs_12{
+  font-size: 12px;
+}
+.table_tab .nav-link {
+        color: #fff;
+        background-color: #e23719;
+        border: 1px solid transparent;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: 0 0 1px #e43023;
+    }
+    .table_tab .nav-item.show .nav-link, .table_tab .nav-link.active {
+        color: #fff;
+        background-color: #17a2b8;
+        border: 1px solid transparent;
+        box-shadow: 0 0 4px 0px #000000d6;
+    }
+    .example {
+        width: 100%!important;
+    }
+  </style>
+
+</head>
+<body class="fa_tahoma">
+    
+  <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+    <div class="nano">
+        <div class="nano-content">
+            <ul>
+                <div class="logo">
+                  <a href="home.html">
+                    <img class="pr-2" src="../../assets/images/resource/white_logo.png" style="height: 45px; width:auto;margin-top: -11px;" alt="" />
+                    <span class="fa_cohead">Supplier Portal</span>
+                  </a>
+                </div>
+                <!-- <li class="label">Main</li> -->
+                <li><a class="sidebar-sub-toggle"><i class="fas fa-home fs_18"></i>&ensp; Home</a>
+                </li>
+                <li><a class="sidebar-sub-toggle">
+                    <i class="fas fa-tachometer-alt fs_18"></i>&ensp; ASN Home</a>
+                </li>
+
+                <!-- <li class="label">Apps</li> -->
+                <li class="active open"><a class="sidebar-sub-toggle"><i class="fas fa-list fs_18"></i>&ensp; ASN <span
+                            class="sidebar-collapse-icon fas fa-chevron-down"></span></a>
+                    <ul>
+                        <li class="active"><a href="#"><i class="fas fa-tachometer-alt fs_18"></i> Dashboard </a></li>
+                        <li><a href="#"><i class="fas fa-pills fs_18"></i> ASN PO List</a></li>
+                    </ul>
+                </li>
+                <li><a class="sidebar-sub-toggle"><i class="fas fa-list fs_18"></i>&ensp; Request PO <span
+                    class="sidebar-collapse-icon fas fa-chevron-down"></span></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-tachometer-alt fs_18"></i> Request Reservation </a></li>
+                        <li><a href="#"><i class="fas fa-pills fs_18"></i> Request Reservation List</a></li>
+                    </ul>
+                </li>
+                <li><a class="sidebar-sub-toggle"><i class="fas fa-list fs_18"></i>&ensp; Free Goods PO <span
+                    class="sidebar-collapse-icon fas fa-chevron-down"></span></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-tachometer-alt fs_18"></i> Request for Free Goods PO </a></li>
+                        <li><a href="#"><i class="fas fa-pills fs_18"></i> Request for Free Goods PO List</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a><img src="../../assets/images/resource/logout_black_48dp.svg" alt="" height="20" width="20"/>&ensp;Logout</a></li> -->
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /# sidebar -->
+
+<div class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="float-left">
+                    <div class="hamburger sidebar-toggle">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="float-left">
+                  <div class="px-4 pt-3" style="font-size: 14px;">
+                    <img src="../../assets/images/resource/user.svg" alt="phone" height="20" width="20"/> &ensp; 400034 - Saichiya Trading Co.
+                  </div>
+                  <div class="float-center">
+                    <div class="px-4 pt-3" style="font-size: 14px;">            
+                        <b>Jeddah - MOH Stock - MOH Stock</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="float-right">
+                  <div class="dropdown dib">
+                    <div class="p-0" style="font-size: 12px;"> 03/10/2021 | 10:29:29 PM</div>
+                  </div>
+                  <div class="dropdown dib">
+                    <div class="px-4" style="font-size: 12px;"> <img src="../../assets/images/resource/email2.svg" alt="phone" height="20" width="20"/>  technicalsupport@nupco.com</div>
+                  </div>
+                    <div class="dropdown dib">
+                      <div class="p-0" style="font-size: 12px;"> <img src="../../assets/images/resource/phone.svg" alt="phone" height="15" width="15"/>  1800 345 0000</div>
+                        <div class="header-icon" data-toggle="dropdown" style="font-size: 13px;">
+                        <a href="" class="pt-4">
+                          <img src="../../assets/images/resource/logout_black_48dp.svg" alt="" height="16" width="16"/> <span class="m-0"><b> Sign out</b></span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-wrap">
+  <div class="main">
+      <div class="container-fluid px-0">
+          <div class="row mx-0">
+            <div class="col-lg-12 px-0 py-0">
+              <div class="card mt-1 mb-0 py-2 fa_tahoma">
+                <div class="row">
+                    <div class="col-lg-5 d-flex align-items-center">
+                        <h5 class="px-3 fa_tahoma"><b>PO List</b></h5>
+                    </div>
+                    <div class="col-lg-7">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 px-0 py-0">
+              <div class="card my-0 p-2">
+                <div class="col-12 text-center">
+                    <ul class="nav nav-tabs table_tab border-0 pt-2" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active py-1 px-2" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Nupco PO List</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link py-1 px-2" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Customer PO List</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane active" id="nav-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="col-12 table_fixed_height text-center">
+                          <form action="" method="POST" id="form1" name="form1">
+                              <table id="poListDataTable" class="display example fs_12">
+                                  <thead>
+                                          <th class="text-nowrap px-3">All</th>
+                                          <th class="text-nowrap px-3">MOH PO No</th>
+                                          <th class="text-nowrap px-3">Nupco PO No</th>
+                                          <th class="text-nowrap px-3">Total Value</th>
+                                          <th class="text-nowrap px-3">PO Date</th>
+                                          <th class="text-nowrap px-3">Plant</th>
+                                          <th class="text-nowrap px-3">Ship To</th>
+                                          <th class="text-nowrap px-3">PO Qty</th>
+                                          <th class="text-nowrap px-3">Delivered Qty</th>
+                                          <th class="text-nowrap px-3">Remaining Qty</th>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" name="selected_nupco_po[]" value="4500013454"></td><td>ECC-LEG-TEND</td><td>4500013454</td><td>44541028.00</td><td>0000-00-00</td><td>W2C1</td><td>Jeddah MOH Stock</td><td>25365212</td><td>23272640</td><td>2092572</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="selected_nupco_po[]" value="4500013454"></td><td>ECC-LEG-TEND</td><td>4500013454</td><td>44541028.00</td><td>0000-00-00</td><td>W2C1</td><td>Jeddah MOH Stock</td><td>25365212</td><td>23272640</td><td>2092572</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="selected_nupco_po[]" value="4500013454"></td><td>ECC-LEG-TEND</td><td>4500013454</td><td>44541028.00</td><td>0000-00-00</td><td>W2C1</td><td>Jeddah MOH Stock</td><td>25365212</td><td>23272640</td><td>2092572</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                  <button id="submit" class="btn btn-success">Create ASN</button>
+                                </form>
+                        </div>
+                      </div>
+                      <!-- ========nav-home close======= -->
+                      <div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                         <div class="col-12 table_fixed_height text-center">
+                          <form action="" method="POST">
+                              <table id="cuspolist" class="display example fs_12">
+                                  <thead>
+                                      <tr class="bg_color">
+                                          <th class="text-nowrap px-3">All</th>
+                                          <th class="text-nowrap px-3">MOH PO No</th>
+                                          <th class="text-nowrap px-3">Nupco PO No</th>
+                                          <th class="text-nowrap px-3">Total Value</th>
+                                          <th class="text-nowrap px-3">PO Date</th>
+                                          <th class="text-nowrap px-3">Plant</th>
+                                          <th class="text-nowrap px-3">PO Qty</th>
+                                          <th class="text-nowrap px-3">Delivered Qty</th>
+                                          <th class="text-nowrap px-3">Remaining Qty</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selected_customer_po[]" value="4300000631"></td>
+                                        <td>190010017700</td>
+                                        <td>4300000631</td>
+                                        <td>749070.00</td>
+                                        <td>2021-02-23</td>
+                                        <td>W2C1</td>
+                                        <td>29000</td>
+                                        <td>0</td>
+                                        <td>29000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox" name="selected_customer_po[]" value="4300000631"></td><td>190010017700</td><td>4300000631</td><td>749070.00</td><td>2021-02-23</td><td>W2C1</td><td>29000</td><td>0</td><td>29000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="selected_customer_po[]" value="4300000631"></td><td>190010017700</td><td>4300000631</td><td>749070.00</td><td>2021-02-23</td><td>W2C1</td><td>29000</td><td>0</td><td>29000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="selected_customer_po[]" value="4300000631"></td><td>190010017700</td><td>4300000631</td><td>749070.00</td><td>2021-02-23</td><td>W2C1</td><td>29000</td><td>0</td><td>29000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                  <button type="submit" class="btn btn-success">Create ASN</button>
+                          </form>
+                        </div>
+                      </div>
+                      <!-- =========nav-profile========= -->
+                    </div>
+          
+                    </div>
+                  </div>
+                </div><br>
+              </div>
+            </div>
+              </div>
+</div> 
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="../../assets/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../../assets/MDB-free/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../../assets/owl.carousel/owl.carousel.min.js"></script>
+  <!-- aos script files -->
+  <script src="../../assets/aos/aos.js"></script>
+  <!-- venobox script files -->
+  <script src="../../assets/venobox/venobox.min.js"></script>
+  <!-- script files -->
+  <script src="../../assets/lib/crs.min.js"></script>
+  <script src="../../assets/lib/script.js"></script>
+  <!--------table style lib------------------------>
+  <script src="../../assets/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../assets/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script src="../../assets/lib/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="../../assets/lib/sidebar.js"></script>
+    <script src="../../assets/lib/pace.min.js"></script>
+    <!-- sidebar -->
+
+    <script src="../../assets/lib/scripts.js"></script>
+    <!-- bootstrap -->
+        
+    <!-- scripit init-->
+    <!-- <script src="../../assets/lib/dashboard2.js"></script> -->
+    <script>
+      $(document).ready(function(){
+          $("table").css("width", "100%");
+      });
+    </script>
+    <script>
+      $(document).ready( function () {
+          $('.example').DataTable({
+            scrollY: '40vh',
+            scrollX: true,
+            paging: false,
+            searching: false,
+            autoWidth: true
+          });
+      } );
+    </script>
+  
+</body>
+
+</html>

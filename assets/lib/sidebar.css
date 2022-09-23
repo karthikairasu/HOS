@@ -95,7 +95,7 @@
 
 .sidebar .nano-content > ul li > a:hover {
   /* background: linear-gradient(to right, #5772FE , #6D85FB); */
-  background: linear-gradient(to right, #b5b5b570, #b5b5b575);
+  background: linear-gradient(to right, #b5b5b5, #b5b5b5);
   color: white;
   border-radius: 6px;
 }
